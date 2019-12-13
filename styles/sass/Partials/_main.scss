@@ -6,14 +6,22 @@ main {
 .projectTwo,
 .projectThree,
 .projectFour {
-    height:350px;
-    width:50%;
+    height:550px;
     background-color: black;
     border-radius: 20px;
     border: 1px solid violet;
 }
 
+.projectOne, .projectTwo {
+    width:50%;
+}
+
+.projectThree {
+
+}
+
 .projectList {
     display:flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
 }

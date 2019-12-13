@@ -235,15 +235,21 @@ a {
 }
 
 header {
-  height: 100vh;
+  height: 95vh;
   position: relative;
+  background-color: ghostwhite;
+  border-radius: 0 0 300px 0;
+  margin-bottom: 5vh;
 }
 
 .topNavbar {
   height: 88px;
-  border-bottom: 1px solid rgba(227, 4, 37, 0.4);
+  border-bottom: 1px solid rgba(227, 4, 37, 0.5);
   position: -webkit-sticky;
   position: sticky;
+  background-color: ghostwhite;
+  z-index: 9999;
+  top: 0;
 }
 
 .topNavbar ul {
@@ -337,7 +343,9 @@ h3 {
 
 .pageOneName .myName {
   color: rgba(227, 4, 37, 0.8);
-  font-size: 10rem;
+  font-size: 12rem;
+  font-family: 'Cougrette', cursive;
+  text-shadow: 0 15px 30px rgba(227, 4, 37, 0.3);
 }
 
 main {
@@ -348,20 +356,22 @@ main {
 .projectTwo,
 .projectThree,
 .projectFour {
-  height: 350px;
-  width: 50%;
+  height: 550px;
   background-color: black;
   border-radius: 20px;
   border: 1px solid violet;
+}
+
+.projectOne, .projectTwo {
+  width: 50%;
 }
 
 .projectList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .wrapper {
@@ -383,5 +393,4 @@ a {
 
 body {
   font-family: 'Merriweather', serif;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
