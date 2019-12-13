@@ -1,0 +1,19 @@
+main {
+    height:100vh;
+}
+
+.projectOne,
+.projectTwo,
+.projectThree,
+.projectFour {
+    height:350px;
+    width:50%;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid violet;
+}
+
+.projectList {
+    display:flex;
+    justify-content: space-between;
+}

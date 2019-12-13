@@ -235,13 +235,15 @@ a {
 }
 
 header {
-  height: 95vh;
+  height: 100vh;
   position: relative;
 }
 
 .topNavbar {
-  height: 100px;
+  height: 88px;
   border-bottom: 1px solid rgba(227, 4, 37, 0.4);
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .topNavbar ul {
@@ -276,7 +278,14 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 25px;
+  padding: 13px 25px;
+}
+
+.topNavbar .topNavbarLeftHalf li a:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3F3F3F), color-stop(150%, #1C1C1C)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  border-radius: 40px;
 }
 
 .topNavbar .topNavbarRightHalf {
@@ -293,24 +302,66 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 25px;
+  padding: 13px 25px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+  border-radius: 40px;
+}
+
+.topNavbar .topNavbarRightHalf li a:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3F3F3F), color-stop(150%, #1C1C1C)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+}
+
+h1, h3 {
+  font-size: 8rem;
+  text-align: center;
+  line-height: 130px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+h3 {
+  font-size: 5rem;
+  text-align: center;
 }
 
 .pageOneName {
   padding-top: 10%;
+  font-size: 7rem;
 }
 
-h1 {
+.pageOneName .myName {
+  color: rgba(227, 4, 37, 0.8);
   font-size: 10rem;
-  text-align: center;
-  position: absolute;
-  line-height: 150px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  top: 55%;
-  right: 25%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+}
+
+main {
+  height: 100vh;
+}
+
+.projectOne,
+.projectTwo,
+.projectThree,
+.projectFour {
+  height: 350px;
+  width: 50%;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid violet;
+}
+
+.projectList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper {
@@ -332,4 +383,5 @@ a {
 
 body {
   font-family: 'Merriweather', serif;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
