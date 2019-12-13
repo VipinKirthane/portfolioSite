@@ -394,23 +394,99 @@ main {
 }
 
 .topHalfIcons {
-  height: 100px;
-  width: 100px;
+  height: 700px;
+  width: 700px;
   padding: 10px;
   border-radius: 50%;
   color: blue;
   margin-bottom: 20px;
+  background-color: lightseagreen;
+}
+
+.topHalfIcons a {
+  border-radius: 50px;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
+}
+
+.topHalfIcons .devicon-css3-plain-wordmark:hover {
+  color: #254BDD;
+  -webkit-box-shadow: 0 0 15px #254BDD;
+          box-shadow: 0 0 15px #254BDD;
+  text-shadow: 0 0 15px #254BDD;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
+}
+
+.topHalfIcons .devicon-html5-plain-wordmark:hover {
+  color: #C73118;
+  -webkit-box-shadow: 0 0 15px #C73118;
+          box-shadow: 0 0 15px #C73118;
+  text-shadow: 0 0 15px #C73118;
 }
 
 .topHalfIcons i {
-  width: 100%;
-  background-color: black;
-  color: red;
   font-size: 5rem;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
+  background-color: black;
+  color: #666;
+  margin-right: 200px;
+  margin-left: 40px;
+  padding: 15px;
+  margin: 20px 0;
   border-radius: 50%;
+  text-align: center;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.topHalfIcons i:before {
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.topHalfIcons i:hover::before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .wrapper {

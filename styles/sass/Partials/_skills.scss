@@ -3,22 +3,76 @@
 }
 
 .topHalfIcons {
-    
-        
-        height:100px;
-        width:100px;
+        height:700px;
+        width:700px;
         padding:10px;
         border-radius: 50%;
         color:blue;
         margin-bottom:20px;
-    i {
-        width:100%;
-        background-color: black;
-        color:red;
-        font-size:5rem;
-        height:200px;
-        width:200px;
-        padding:20px;
-        border-radius: 50%;
+        background-color: lightseagreen;
+        a {
+            border-radius: 50px;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        .devicon-css3-plain-wordmark:hover {
+                color: #254BDD;
+                box-shadow: 0 0 15px #254BDD;
+                text-shadow: 0 0 15px #254BDD;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        .devicon-html5-plain-wordmark:hover {
+                color: #C73118;
+                box-shadow: 0 0 15px #C73118;
+                text-shadow: 0 0 15px #C73118;
+        }
+        i {
+            // color:red;
+            font-size:5rem;
+            background-color: black;
+            color: #666;
+            margin-right:200px;
+            margin-left:40px;
+            padding:15px;
+            margin:20px 0;
+            border-radius: 50%;
+            text-align: center;
+            transition: .1s;
+            &:before {
+                transition: .1s;
+                transform: scale(.9);
+                // z-index: -1;
+            }
+            &:hover::before {
+                transform: scale(1.2);
+                // filter: blur(3px);
+            }
     }
 }
