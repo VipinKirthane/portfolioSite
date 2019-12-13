@@ -1,6 +1,14 @@
+$primaryBackground: #14161E;
+$accentColorCyan: #35E688;
+$accentColorRed: #E30425;
+$accentColorRed2:#FF0266;
+$accentColorTest: #83B692;
+
 @import "./Partials/setupSnippet";
 @import "./Partials/header";
 @import "./Partials/main";
+@import "./Partials/aboutSection";
+@import "./Partials/skills";
 
 .wrapper {
     max-width:1200px;
@@ -14,10 +22,14 @@ html {
 
 a {
     text-decoration: none;
-    color:black;
+    color:white;
     font-family: 'Spectral', serif;
     font-weight:500;
     // letter-spacing:1px;
+}
+
+p {
+    color:white;
 }
 
 * {
@@ -26,6 +38,8 @@ a {
 
 body {
     font-family: 'Merriweather', serif;
+    background-color: $primaryBackground ;
     // font-family: 'Spectral', serif;
     // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+

@@ -2,26 +2,3 @@ main {
     height:100vh;
 }
 
-.projectOne,
-.projectTwo,
-.projectThree,
-.projectFour {
-    height:550px;
-    background-color: black;
-    border-radius: 20px;
-    border: 1px solid violet;
-}
-
-.projectOne, .projectTwo {
-    width:50%;
-}
-
-.projectThree {
-
-}
-
-.projectList {
-    display:flex;
-    flex-wrap: wrap;
-    // justify-content: space-between;
-}
