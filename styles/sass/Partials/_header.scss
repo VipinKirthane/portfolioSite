@@ -2,7 +2,7 @@ header {
     // background-color:lightcyan;
     height:95vh;
     position: relative;
-    background-color:#34414e;
+    background-color:black;
     border-radius: 0 0 300px 0;
     margin-bottom:5vh;
 }
@@ -10,7 +10,7 @@ header {
 // Navbar Start
 .topNavbar {
     height:88px;
-    border-bottom:1px solid rgba(227, 4, 37, 0.1);
+    border-bottom:1px solid rgba(53, 230, 136, 0.5);
     border-radius: 0 0 300px 300px;
     position: sticky;
     background-color:$primaryBackground;
@@ -88,12 +88,13 @@ h3 {
 .pageOneName {
     padding-top:10%;
     font-size:7rem;
+    color:white;
     // font-weight: 200;
     .myName {
-        color:$accentColorRed2;
+        color:$accentColorCyan;
         font-size:12rem;
         font-family: 'Cougrette', cursive;
-        text-shadow: 0 15px 30px rgba(255, 2, 102, 0.8);
+        text-shadow: 0 15px 30px $accentColorCyan;
     }
 }
 // Page One Name End

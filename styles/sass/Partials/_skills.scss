@@ -1,5 +1,14 @@
 .skillsSection {
-    height:70vh;
+    height:100vh;
+        background-color:black;
+    border-radius: 300px 0 300px 0;
+    h3 {
+        color:$accentColorCyan;
+        margin-bottom:50px;
+        width:40%;
+        margin:0 auto;
+        border-radius: 30px;
+    }
 }
 
 .topHalfIcons {
