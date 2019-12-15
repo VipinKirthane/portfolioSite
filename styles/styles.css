@@ -722,6 +722,12 @@ main {
   width: 50%;
 }
 
+.contactForm {
+  height: 50vh;
+  font-size: 2rem;
+  text-align: center;
+}
+
 footer {
   padding: 10px 0;
   font-size: 1.8rem;
