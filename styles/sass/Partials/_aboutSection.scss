@@ -1,6 +1,10 @@
 .aboutSection {
     height:70vh;
     margin-top:7%;
+    h3 {
+        color:$accentColorCyan;
+        margin:0 auto;
+    }
 }
 
 .aboutSectionTextAndPic {
@@ -10,10 +14,8 @@
 
 .aboutSectionText {
     font-size:1.7rem;
-    width:70%;
-    line-height:35px;
-    margin-top:7%;
-    // letter-spacing: 2px;
+    width:60%;
+    line-height:38px;
 }
 
 .aboutSectionPicture  {
