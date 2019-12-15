@@ -1,12 +1,15 @@
 .projectsSection {
     min-height:100vh;
     margin-top: 50px;
-    margin-bottom:50px;
-    background-color:black;
+    padding-bottom:50px;
+    margin-bottom:20px;
+    background-color:#3e3e3e;
     border-radius: 300px 0 300px 0;
     p {
-        font-size:1.8rem;
+        font-size:1.5rem;
         line-height:30px;
+        margin-bottom:20px;
+        margin-top:20px;
     }
 }
 
@@ -23,25 +26,22 @@
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    button {
-        border:1px solid black;
-        font-size:2rem;
-        border-radius: 50px;
-        padding:10px 30px;
-        &:hover {
-            background:$accentColorCyan;
-            border:1px solid white;
-            color:black;
-            // border:1px solid white;
+        a {
+            background-color: black;
+            font-size:2rem;
+            border-radius: 50px;
+            padding:10px 30px;
+            &:hover {
+                background-color: $accentColorCyan;
+            }
         }
-    }
 }
 
 .projectOnePreviews, 
 .projectTwoPreviews, 
 .projectThreePreviews,
 .projectFourPreviews, 
-.projectFivePreviews {    
+.projectFivePreviews {
     img {
         width:550px;
         border-radius: 15px;
@@ -59,20 +59,38 @@
 }
 
 
-.projectOne {
+.projectOne,.projectTwo,.projectThree,.projectFour,.projectFive {
     display:flex;
     justify-content: space-between;
     .projectOneDesc,
-    .projectOnePreviews {
+    .projectOnePreviews,
+    .projectTwoDesc,
+    .projectTwoPreviews,
+    .projectThreeDesc,
+    .projectThreePreviews,
+    .projectFourDesc,
+    .projectFourPreviews,
+    .projectFiveDesc,
+    .projectFivePreviews {
         width:50%;
     }
 }
 
-.projectTwo {
-    display:flex;
-    justify-content: space-between;
-    .projectTwoDesc,
-    .projectTwoPreviews {
-        width:50%;
+
+.skillsList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skillButton {
+    font-size:1.5rem;
+    color:white;
+    border:1px solid black;
+    background-color: #111;
+    padding:10px 10px;
+    border-radius: 7px;
+    &:hover {
+        background-color: white;
+        color:black;
     }
 }
