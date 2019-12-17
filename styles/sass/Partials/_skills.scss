@@ -1,6 +1,14 @@
 .skillsSection {
   padding-bottom: 2%;
-  background-color: $primaryBackground;
+  background: linear-gradient(
+        90deg,
+        $primaryBackground (22px - 1px),
+        transparent 1%
+      )
+      center,
+    linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
+    $accentColor;
+  background-size: 22px 22px;
   border-radius: 200px 0 200px 0;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   @include mqTabletSmall {
