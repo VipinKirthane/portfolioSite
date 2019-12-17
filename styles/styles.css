@@ -712,14 +712,14 @@ h3 {
 }
 
 .titlePart a {
-  background-color: #404b69;
+  background-color: rgba(247, 56, 89, 0.8);
   font-size: 2rem;
   border-radius: 50px;
   padding: 10px 30px;
 }
 
 .titlePart a:hover {
-  background-color: #f73859;
+  background-color: #283149;
 }
 
 .projectOnePreviews img,
@@ -729,11 +729,13 @@ h3 {
 .projectFivePreviews img {
   width: 550px;
   border-radius: 15px;
+  padding: 20px;
+  padding-right: 30px;
 }
 
 .projectsSection h4 {
   font-size: 2.5rem;
-  color: white;
+  color: #dbedf3;
 }
 
 .projectsSection h3 {
@@ -804,7 +806,80 @@ h3 {
 .projectFive .projectFourPreviews,
 .projectFive .projectFiveDesc,
 .projectFive .projectFivePreviews {
+  padding: 20px;
   width: 50%;
+}
+
+.projectOne .projectOneDesc:hover,
+.projectOne .projectOnePreviews:hover,
+.projectOne .projectTwoDesc:hover,
+.projectOne .projectTwoPreviews:hover,
+.projectOne .projectThreeDesc:hover,
+.projectOne .projectThreePreviews:hover,
+.projectOne .projectFourDesc:hover,
+.projectOne .projectFourPreviews:hover,
+.projectOne .projectFiveDesc:hover,
+.projectOne .projectFivePreviews:hover,
+.projectTwo .projectOneDesc:hover,
+.projectTwo .projectOnePreviews:hover,
+.projectTwo .projectTwoDesc:hover,
+.projectTwo .projectTwoPreviews:hover,
+.projectTwo .projectThreeDesc:hover,
+.projectTwo .projectThreePreviews:hover,
+.projectTwo .projectFourDesc:hover,
+.projectTwo .projectFourPreviews:hover,
+.projectTwo .projectFiveDesc:hover,
+.projectTwo .projectFivePreviews:hover,
+.projectThree .projectOneDesc:hover,
+.projectThree .projectOnePreviews:hover,
+.projectThree .projectTwoDesc:hover,
+.projectThree .projectTwoPreviews:hover,
+.projectThree .projectThreeDesc:hover,
+.projectThree .projectThreePreviews:hover,
+.projectThree .projectFourDesc:hover,
+.projectThree .projectFourPreviews:hover,
+.projectThree .projectFiveDesc:hover,
+.projectThree .projectFivePreviews:hover,
+.projectFour .projectOneDesc:hover,
+.projectFour .projectOnePreviews:hover,
+.projectFour .projectTwoDesc:hover,
+.projectFour .projectTwoPreviews:hover,
+.projectFour .projectThreeDesc:hover,
+.projectFour .projectThreePreviews:hover,
+.projectFour .projectFourDesc:hover,
+.projectFour .projectFourPreviews:hover,
+.projectFour .projectFiveDesc:hover,
+.projectFour .projectFivePreviews:hover,
+.projectFive .projectOneDesc:hover,
+.projectFive .projectOnePreviews:hover,
+.projectFive .projectTwoDesc:hover,
+.projectFive .projectTwoPreviews:hover,
+.projectFive .projectThreeDesc:hover,
+.projectFive .projectThreePreviews:hover,
+.projectFive .projectFourDesc:hover,
+.projectFive .projectFourPreviews:hover,
+.projectFive .projectFiveDesc:hover,
+.projectFive .projectFivePreviews:hover {
+  -webkit-box-shadow: 6px 10px 30px 6px #283149;
+          box-shadow: 6px 10px 30px 6px #283149;
+  border-radius: 10px;
+}
+
+.projectOneDesc,
+.projectTwoDesc,
+.projectThreeDesc,
+.projectFourDesc,
+.projectFiveDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .skillsList {
@@ -817,17 +892,16 @@ h3 {
 }
 
 .skillButton {
-  font-size: 1.5rem;
-  color: white;
-  border: 1px solid black;
-  background-color: #111;
+  font-size: 1.8rem;
+  color: #dbedf3;
+  background-color: #283149;
   padding: 10px 10px;
   border-radius: 7px;
+  letter-spacing: 2px;
 }
 
 .skillButton:hover {
-  background-color: white;
-  color: black;
+  background-color: rgba(247, 56, 89, 0.8);
 }
 
 button,
@@ -895,7 +969,6 @@ input {
   height: 13px;
   margin-right: 5px;
   border-radius: 8px;
-  background: white;
 }
 
 .screenHeaderButton.close {
@@ -974,7 +1047,7 @@ input {
 .appContact {
   margin-top: auto;
   font-size: 8px;
-  color: #e5dfdf;
+  color: #dbedf3;
 }
 
 .appFormGroup {
@@ -996,7 +1069,7 @@ input {
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #e5dfdf;
+  color: #dbedf3;
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
@@ -1005,19 +1078,19 @@ input {
 }
 
 .appFormControl::-webkit-input-placeholder {
-  color: #e5dfdf;
+  color: #dbedf3;
 }
 
 .appFormControl:-ms-input-placeholder {
-  color: #e5dfdf;
+  color: #dbedf3;
 }
 
 .appFormControl::-ms-input-placeholder {
-  color: #e5dfdf;
+  color: #dbedf3;
 }
 
 .appFormControl::placeholder {
-  color: #e5dfdf;
+  color: #dbedf3;
 }
 
 .appFormControl:focus {
@@ -1081,7 +1154,7 @@ footer {
 }
 
 footer p {
-  color: #e5dfdf;
+  color: #dbedf3;
 }
 
 .wrapper {
