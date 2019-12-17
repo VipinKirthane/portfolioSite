@@ -1,0 +1,11 @@
+@mixin mqLaptopBig {
+    @media(max-width: 1366px){
+        @content;
+    }
+}
+
+@mixin mqLaptopSmall {
+    @media(max-width: 1000px) {
+        @content;
+    }
+}

@@ -16,6 +16,9 @@
 .aboutSectionTextAndPic {
     display:flex;
     justify-content: space-between;
+    @include mqLaptopSmall {
+        flex-direction: column;
+    }
 }
 
 .aboutSectionText {
@@ -24,10 +27,19 @@
     line-height:34px;
     padding-bottom:3%;
     padding-left:40px;
+    @include mqLaptopSmall {
+        width:100%;
+
+    }
 }
 
 .aboutSectionPicture  {
     width:30%;
+    @include mqLaptopSmall {
+        width:100%;
+        text-align: center;
+        margin-top:40px;
+    }
     p {
         width:80%;
     }
@@ -46,4 +58,7 @@
     right:0;
     z-index: -1;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, .4);
+    @include mqLaptopSmall {
+        width:100%;
+    }
 }

@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Spectral|Roboto|Cougrette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spectral|Roboto|Cougrette&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://kit.fontawesome.com/23a74f9e1a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/styles.css">
   <title>Vipin Kirthane</title>
@@ -29,10 +30,10 @@
           </li>
         </div>
         <div class="topNavbarRightHalf">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#project">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a data-scroll href="#about">ABOUT</a></li>
+          <li><a data-scroll href="#skills">SKILLS</a></li>
+          <li><a data-scroll href="#project">PROJECTS</a></li>
+          <li><a data-scroll href="#contact">CONTACT</a></li>
         </div>
       </ul>
     </nav>
@@ -86,14 +87,11 @@
   </section>
   
   
-  <section class="projectsSection">
+  <section class="projectsSection" id="project">
     <div class="projectList wrapper">
       <h3>PROJECTS PORTFOLIO</h3>
 
       <div class="projectOne">
-        <div class="projectOnePreviews">
-          <img src="assets/pictures/design.png" alt="Design website mockup on laptop & phone">
-        </div>
         <div class="projectOneDesc">
           <div class="projectOneTopHalf">
             <div class="titlePart">
@@ -108,6 +106,9 @@
               <span class="skillButton">SASS</span>
             </div>
           </div>
+        </div>
+        <div class="projectOnePreviews">
+          <img src="assets/pictures/design.png" alt="Design website mockup on laptop & phone">
         </div>
       </div>
 
@@ -134,9 +135,7 @@
       </div>
 
       <div class="projectThree">
-        <div class="projectThreePreviews">
-          <img src="assets/pictures/westerosiWiki.png" alt="Westerosi Wiki website mockup on a phone and laptop">
-        </div>
+        
         <div class="projectThreeDesc">
           <div class="projectThreeTopHalf">
             <div class="titlePart">
@@ -152,6 +151,9 @@
               <span class="skillButton">API Based</span>
             </div>
           </div>
+        </div>
+        <div class="projectThreePreviews">
+          <img src="assets/pictures/westerosiWiki.png" alt="Westerosi Wiki website mockup on a phone and laptop">
         </div>
       </div>
 
@@ -180,9 +182,7 @@
       </div>
 
       <div class="projectFive">
-        <div class="projectFivePreviews">
-          <img src="assets/pictures/gifMeAMovie.png" alt="Gif me a movie website mockup on laptop & phone">
-        </div>
+       
         <div class="projectFiveDesc">
           <div class="projectFiveTopHalf">
             <div class="titlePart">
@@ -200,12 +200,15 @@
             </div>
           </div>
         </div>  
+        <div class="projectFivePreviews">
+          <img src="assets/pictures/gifMeAMovie.png" alt="Gif me a movie website mockup on laptop & phone">
+        </div>
       </div>
 
     </div>
   </section>
 
-  <section class="contactForm">
+  <section class="contactForm" id="contact">
     <div class="background">
       <div class="container">
         <div class="screen">

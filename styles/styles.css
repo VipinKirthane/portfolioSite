@@ -385,6 +385,15 @@ h3 {
           justify-content: space-between;
 }
 
+@media (max-width: 1000px) {
+  .aboutSectionTextAndPic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .aboutSectionText {
   font-size: 1.7rem;
   width: 60%;
@@ -393,8 +402,22 @@ h3 {
   padding-left: 40px;
 }
 
+@media (max-width: 1000px) {
+  .aboutSectionText {
+    width: 100%;
+  }
+}
+
 .aboutSectionPicture {
   width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .aboutSectionPicture {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
 }
 
 .aboutSectionPicture p {
@@ -416,6 +439,12 @@ h3 {
   z-index: -1;
   -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1000px) {
+  .textBackground {
+    width: 100%;
+  }
 }
 
 .skillsSection {
@@ -452,10 +481,10 @@ h3 {
 }
 
 .topHalfIcons .devicon-html5-plain-wordmark:hover {
-  color: #ffa259;
-  -webkit-box-shadow: 0 0 15px #ffa259;
-          box-shadow: 0 0 15px #ffa259;
-  text-shadow: 0 0 15px #ffa259;
+  color: #fb5b5a;
+  -webkit-box-shadow: 0 0 15px #fb5b5a;
+          box-shadow: 0 0 15px #fb5b5a;
+  text-shadow: 0 0 15px #fb5b5a;
 }
 
 .topHalfIcons .devicon-css3-plain-wordmark:hover {
@@ -727,7 +756,7 @@ h3 {
 .projectThreePreviews img,
 .projectFourPreviews img,
 .projectFivePreviews img {
-  width: 550px;
+  width: 100%;
   border-radius: 15px;
   padding: 20px;
   padding-right: 30px;
@@ -754,6 +783,22 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1366px) {
+  .projectOne,
+  .projectTwo,
+  .projectThree,
+  .projectFour,
+  .projectFive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .projectOne .projectOneDesc,
