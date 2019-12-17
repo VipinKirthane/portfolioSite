@@ -1,18 +1,5 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  // background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
-  background-color: $primaryBackground2;
-  font-size: 12px;
-}
-
-body, button, input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+button, 
+input {
   letter-spacing: 1.4px;
 }
 
@@ -29,7 +16,7 @@ body, button, input {
 
 .screen {
   position: relative;
-  background: #3e3e3e;
+  background: #212020;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
@@ -43,7 +30,7 @@ body, button, input {
   right: 20px;
   bottom: 0;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -51,7 +38,7 @@ body, button, input {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: #4d4d4f;
+  background: #2A2929;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -70,7 +57,7 @@ body, button, input {
 }
 
 .screenHeaderButton.close {
-  background: #ed1c6f;
+  background: #FF4446;
 }
 
 .screenHeaderButton.maximize {

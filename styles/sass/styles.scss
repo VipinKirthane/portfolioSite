@@ -1,10 +1,4 @@
-$primaryBackground2: #283149;
-$primaryBackground: #404b69;
-$primaryBackground3:#283149;
-$accentColorCyan: #f73859;
-$accentColorRed: #E30425;
-$accentColorRed2:#FF0266;
-
+@import "./Partials/variables";
 @import "./Partials/setupSnippet";
 @import "./Partials/header";
 @import "./Partials/main";
@@ -27,21 +21,18 @@ html {
 
 a {
     text-decoration: none;
-    color:#dbedf3;
+    color:$fontColor;
     font-family: 'Spectral', serif;
     font-weight:500;
-    // letter-spacing:1px;
 }
 
 p {
-    color:#dbedf3;
-}
-
-* {
-    color:#dbedf3;
+    color:$fontColor;
+    font-size:2rem;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: $primaryBackground2;
 }
 

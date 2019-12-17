@@ -1,23 +1,20 @@
 header {
-    // background-color:lightcyan;
-    // height:98vh;
-    padding-bottom:6%;
+    padding-bottom:8%;
     position: relative;
     background-color:$primaryBackground;
     border-radius: 0 0 200px 0;
-    // margin-bottom:2%;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
 }
 
 // Navbar Start
 .topNavbar {
-    height:50px;
+    height:60px;
     border-radius: 0 0 15px 15px;
     position: fixed;
     top:0;
     z-index: 1;
     background-color:$primaryBackground2;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     ul {
         display:flex;
@@ -36,14 +33,14 @@ header {
         li a {
             display:flex;
             justify-content: space-between;
-            padding:10px 25px;
-            margin-top:5px;
-            background-color:rgba(247, 56, 89, 0.25);
-            border-radius: 15px;
+            padding:10px 17px;
+            margin-top:10px;
+            background-color:rgba(247, 56, 89, 0.7);
+            border-radius: 50px;
+            color:black;
+            font-size: 1.8rem;
             &:hover {
-                color:black;
-                background-color:rgba(247, 56, 89, 0.8);
-                border-radius: 15px;
+                background-color:rgba(247, 56, 89,0.9);
             }
         }
     }
@@ -54,15 +51,15 @@ header {
         li a{
             display:flex;
             justify-content: space-between;
-            padding:10px 25px;
-            margin-top:5px;
-            background-color:rgba(247, 56, 89, 0.25);
+            padding:10px 17px;
+            margin-top:10px;
+            background-color:rgba(247, 56, 89, 0.7);
             margin-left:15px;
-            border-radius: 15px;
-            // box-shadow: 0 15px 30px rgba(227, 4, 37, 0.1);
+            color:black;
+            border-radius: 50px;
+            font-size: 1.8rem;
             &:hover {
-                color:black;
-                background-color:rgba(247, 56, 89, 0.8);
+                background-color:rgba(247, 56, 89,0.9);
                 background-blend-mode: multiply;
             }
         }
@@ -75,33 +72,41 @@ header {
 h1,h3 {
     font-size:8rem;
     text-align: center;
-    line-height:130px;
     font-weight: 700;
     letter-spacing: 2px;
     transform: translateY(10%);
+    color:$fontColor;
 }
 
 h1 {
     padding-top:10%;
+    line-height:130px;
+    padding-bottom:45px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 h3 {
-    font-size:5rem;
+    font-size:6rem;
     text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .pageOneName {
     padding-top:8%;
     padding-bottom:10%;
     font-size:7rem;
-    // color:white;
-    // font-weight: 200;
     .myName {
         color:$accentColorCyan;
         font-size:12rem;
         font-family: 'Cougrette', cursive;
-        // text-shadow: 0 2px 6px $accentColorCyan;
-        text-shadow: 5px 5px rgb(0, 0, 0)
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
     }
 }
+
 // Page One Name End
