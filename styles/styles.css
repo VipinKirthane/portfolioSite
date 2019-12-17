@@ -480,6 +480,13 @@ h3 {
   position: relative;
 }
 
+@media (max-width: 1000px) {
+  .topHalfIcons {
+    height: 480px;
+    width: 480px;
+  }
+}
+
 .topHalfIcons .devicon-html5-plain-wordmark:hover {
   color: #fb5b5a;
   -webkit-box-shadow: 0 0 15px #fb5b5a;
@@ -546,6 +553,14 @@ h3 {
   border-radius: 50%;
   -webkit-transition: .1s;
   transition: .1s;
+}
+
+@media (max-width: 1000px) {
+  .topHalfIcons i, .topHalfIcons .firebaseIcon {
+    height: 120px;
+    width: 120px;
+    font-size: 8rem;
+  }
 }
 
 .topHalfIcons i:before, .topHalfIcons .firebaseIcon:before {
@@ -740,11 +755,29 @@ h3 {
           align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .titlePart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .titlePart a {
   background-color: rgba(247, 56, 89, 0.8);
   font-size: 2rem;
   border-radius: 50px;
   padding: 10px 30px;
+}
+
+@media (max-width: 1000px) {
+  .titlePart a {
+    font-size: 1.7rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 .titlePart a:hover {
@@ -853,6 +886,116 @@ h3 {
 .projectFive .projectFivePreviews {
   padding: 20px;
   width: 50%;
+}
+
+@media (max-width: 1366px) {
+  .projectOne .projectOneDesc,
+  .projectOne .projectOnePreviews,
+  .projectOne .projectTwoDesc,
+  .projectOne .projectTwoPreviews,
+  .projectOne .projectThreeDesc,
+  .projectOne .projectThreePreviews,
+  .projectOne .projectFourDesc,
+  .projectOne .projectFourPreviews,
+  .projectOne .projectFiveDesc,
+  .projectOne .projectFivePreviews,
+  .projectTwo .projectOneDesc,
+  .projectTwo .projectOnePreviews,
+  .projectTwo .projectTwoDesc,
+  .projectTwo .projectTwoPreviews,
+  .projectTwo .projectThreeDesc,
+  .projectTwo .projectThreePreviews,
+  .projectTwo .projectFourDesc,
+  .projectTwo .projectFourPreviews,
+  .projectTwo .projectFiveDesc,
+  .projectTwo .projectFivePreviews,
+  .projectThree .projectOneDesc,
+  .projectThree .projectOnePreviews,
+  .projectThree .projectTwoDesc,
+  .projectThree .projectTwoPreviews,
+  .projectThree .projectThreeDesc,
+  .projectThree .projectThreePreviews,
+  .projectThree .projectFourDesc,
+  .projectThree .projectFourPreviews,
+  .projectThree .projectFiveDesc,
+  .projectThree .projectFivePreviews,
+  .projectFour .projectOneDesc,
+  .projectFour .projectOnePreviews,
+  .projectFour .projectTwoDesc,
+  .projectFour .projectTwoPreviews,
+  .projectFour .projectThreeDesc,
+  .projectFour .projectThreePreviews,
+  .projectFour .projectFourDesc,
+  .projectFour .projectFourPreviews,
+  .projectFour .projectFiveDesc,
+  .projectFour .projectFivePreviews,
+  .projectFive .projectOneDesc,
+  .projectFive .projectOnePreviews,
+  .projectFive .projectTwoDesc,
+  .projectFive .projectTwoPreviews,
+  .projectFive .projectThreeDesc,
+  .projectFive .projectThreePreviews,
+  .projectFive .projectFourDesc,
+  .projectFive .projectFourPreviews,
+  .projectFive .projectFiveDesc,
+  .projectFive .projectFivePreviews {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .projectOne .projectOneDesc,
+  .projectOne .projectOnePreviews,
+  .projectOne .projectTwoDesc,
+  .projectOne .projectTwoPreviews,
+  .projectOne .projectThreeDesc,
+  .projectOne .projectThreePreviews,
+  .projectOne .projectFourDesc,
+  .projectOne .projectFourPreviews,
+  .projectOne .projectFiveDesc,
+  .projectOne .projectFivePreviews,
+  .projectTwo .projectOneDesc,
+  .projectTwo .projectOnePreviews,
+  .projectTwo .projectTwoDesc,
+  .projectTwo .projectTwoPreviews,
+  .projectTwo .projectThreeDesc,
+  .projectTwo .projectThreePreviews,
+  .projectTwo .projectFourDesc,
+  .projectTwo .projectFourPreviews,
+  .projectTwo .projectFiveDesc,
+  .projectTwo .projectFivePreviews,
+  .projectThree .projectOneDesc,
+  .projectThree .projectOnePreviews,
+  .projectThree .projectTwoDesc,
+  .projectThree .projectTwoPreviews,
+  .projectThree .projectThreeDesc,
+  .projectThree .projectThreePreviews,
+  .projectThree .projectFourDesc,
+  .projectThree .projectFourPreviews,
+  .projectThree .projectFiveDesc,
+  .projectThree .projectFivePreviews,
+  .projectFour .projectOneDesc,
+  .projectFour .projectOnePreviews,
+  .projectFour .projectTwoDesc,
+  .projectFour .projectTwoPreviews,
+  .projectFour .projectThreeDesc,
+  .projectFour .projectThreePreviews,
+  .projectFour .projectFourDesc,
+  .projectFour .projectFourPreviews,
+  .projectFour .projectFiveDesc,
+  .projectFour .projectFivePreviews,
+  .projectFive .projectOneDesc,
+  .projectFive .projectOnePreviews,
+  .projectFive .projectTwoDesc,
+  .projectFive .projectTwoPreviews,
+  .projectFive .projectThreeDesc,
+  .projectFive .projectThreePreviews,
+  .projectFive .projectFourDesc,
+  .projectFive .projectFourPreviews,
+  .projectFive .projectFiveDesc,
+  .projectFive .projectFivePreviews {
+    width: 100%;
+  }
 }
 
 .projectOne .projectOneDesc:hover,

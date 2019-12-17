@@ -28,6 +28,10 @@
         margin:0 auto;
         margin-bottom:20px;
         position: relative;
+        @include mqLaptopSmall {
+                height:480px;
+                width:480px;
+        }
         .devicon-html5-plain-wordmark:hover {
                 color: #fb5b5a;
                 box-shadow: 0 0 15px #fb5b5a;
@@ -77,6 +81,11 @@
                 padding:20px;
                 border-radius: 50%;
                 transition: .1s;
+                @include mqLaptopSmall {
+                   height:120px;
+                   width:120px;
+                   font-size:8rem;
+                }
             &:before {
                 transition: .1s;
                 transform: scale(.9);
@@ -100,6 +109,9 @@
 
 .devicon-html5-plain-wordmark {
         left:38%;
+        @include mqLaptopSmall {
+                
+        }
 }
 
 .devicon-css3-plain-wordmark{
