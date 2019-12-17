@@ -237,10 +237,11 @@ a {
 header {
   padding-bottom: 8%;
   position: relative;
-  background-color: #404b69;
   border-radius: 0 0 200px 0;
   -webkit-box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
           box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
+  background: linear-gradient(90deg, #404b69 21px, transparent 1%) center, linear-gradient(#404b69 21px, transparent 1%) center, #f73859;
+  background-size: 22px 22px;
 }
 
 @media (max-width: 1000px) {
@@ -282,6 +283,16 @@ header {
   z-index: 9999;
   padding-top: 2px;
   padding-left: 3px;
+  padding-right: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menuOpener:hover,
@@ -293,30 +304,32 @@ header {
 .menuOpenerInner {
   background: #f73859;
   height: .5rem;
-  margin-left: .75rem;
-  margin-top: 1.75rem;
-  margin-bottom: 1rem;
-  padding-top: 10px;
   width: 4rem;
+}
+
+.menuOpenerInner:focus {
+  outline: 1px solid #f73859;
+  border-radius: 20px;
 }
 
 .menuOpenerInner::before,
 .menuOpenerInner::after {
-  background: #404b69;
+  background: #dbedf3;
   content: '';
   display: block;
   height: .5rem;
+  margin-top: 0px;
   width: 4rem;
 }
 
 .menuOpenerInner::before {
-  -webkit-transform: translateY(-0.75rem);
-          transform: translateY(-0.75rem);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 .menuOpenerInner::after {
-  -webkit-transform: translateY(0.25rem);
-          transform: translateY(0.25rem);
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
 }
 
 .menuOpenerInner.active {
@@ -962,6 +975,30 @@ h3 {
           justify-content: space-between;
 }
 
+.projectOne:nth-of-type(2n),
+.projectTwo:nth-of-type(2n),
+.projectThree:nth-of-type(2n),
+.projectFour:nth-of-type(2n),
+.projectFive:nth-of-type(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 1000px) {
+  .projectOne:nth-of-type(2n),
+  .projectTwo:nth-of-type(2n),
+  .projectThree:nth-of-type(2n),
+  .projectFour:nth-of-type(2n),
+  .projectFive:nth-of-type(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 1366px) {
   .projectOne,
   .projectTwo,
@@ -1534,8 +1571,4 @@ p {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #283149;
-}
-
-*:focus {
-  outline: 1px solid #f73859;
 }

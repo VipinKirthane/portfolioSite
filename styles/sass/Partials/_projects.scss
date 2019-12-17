@@ -83,6 +83,14 @@
 .projectFive {
     display:flex;
     justify-content: space-between;
+    &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+    }
+    @include mqLaptopSmall {
+        &:nth-of-type(2n) {
+            flex-direction: column;
+        }
+    }
     @include mqLaptopBig {
         flex-direction: column;
         align-items: center;
