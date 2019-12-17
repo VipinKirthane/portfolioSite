@@ -4,68 +4,142 @@ header {
     background-color:$primaryBackground;
     border-radius: 0 0 200px 0;
     box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
-}
-
-// Navbar Start
-.topNavbar {
-    height:60px;
-    border-radius: 0 0 15px 15px;
-    position: fixed;
-    top:0;
-    z-index: 1;
-    background-color:$primaryBackground2;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    ul {
-        display:flex;
-        justify-content: space-between;
-    }
-
-    .topNavbarLeftHalf,
-    .topNavbarRightHalf {
-        display:flex;
-        font-size:2rem;
-    }
-
-    .topNavbarLeftHalf {
-        width:20%;
-        justify-content: flex-start;
-        li a {
-            display:flex;
-            justify-content: space-between;
-            padding:10px 17px;
-            margin-top:10px;
-            background-color:rgba(247, 56, 89, 0.7);
-            border-radius: 50px;
-            color:black;
-            font-size: 1.8rem;
-            &:hover {
-                background-color:rgba(247, 56, 89,0.9);
-            }
-        }
-    }
-
-    .topNavbarRightHalf {
-        width:80%;
-        justify-content: flex-end;
-        li a{
-            display:flex;
-            justify-content: space-between;
-            padding:10px 17px;
-            margin-top:10px;
-            background-color:rgba(247, 56, 89, 0.7);
-            margin-left:15px;
-            color:black;
-            border-radius: 50px;
-            font-size: 1.8rem;
-            &:hover {
-                background-color:rgba(247, 56, 89,0.9);
-                background-blend-mode: multiply;
-            }
-        }
+    @include mqLaptopSmall {
+        padding-bottom:18%;
+        border-radius: 0 0 100px 0;
     }
 }
-// Navbar End
+
+.menuOpener a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.menuOpener, 
+.menuOpener:hover, 
+.menuOpener.active, 
+.menuOpenerInner, 
+.menuOpenerInner::before, 
+.menuOpenerInner::after, 
+.menu, 
+.menu.active {
+  transition: 250ms all;
+}
+
+.menuOpener {
+  cursor: pointer;
+  height: 64px;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  user-select: none;
+  width: 64px;
+  z-index:9999;
+  padding-top:2px;
+  padding-left:3px;
+}
+.menuOpener:hover, 
+.menuOpener.active {
+  background: $primaryBackground2;
+  border-radius: 20px;
+}
+
+.menuOpenerInner {
+  background: $accentColor;
+  height: .5rem;
+  margin-left: .75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  padding-top:10px;
+  width: 4rem;
+}
+.menuOpenerInner::before, 
+.menuOpenerInner::after {
+  background: $primaryBackground;
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 4rem;
+}
+.menuOpenerInner::before {
+  transform: translateY(-0.75rem);
+}
+.menuOpenerInner::after {
+  transform: translateY(0.25rem);
+}
+.menuOpenerInner.active {
+  background: transparent;
+}
+.menuOpenerInner.active::before {
+  transform: translateY(0rem) rotate(-45deg);
+}
+.menuOpenerInner.active::after {
+  transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+}
+
+.menu {
+  background: $primaryBackground2;
+  color: transparent;
+  height: 64px;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  user-select: none;
+  width: 0rem;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.menu.active {
+  width: calc(100% - 4rem);
+}
+.menu.active .menuLink {
+  color: $fontColor;
+  &:hover {
+      color:$accentColor;
+  }
+}
+
+.menuInner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 4rem;
+  padding: 0;
+}
+
+.menuLink {
+  color: transparent;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 2rem;
+  font-weight: 100;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.menuLink li {
+  margin: auto;
+}
+
+@include mqTabletSmall {
+  .menu {
+    height: auto;
+  }
+  .menuInner {
+    display: block;
+  }
+  .menuLink {
+    padding: 10px 0;
+    font-size: 1.8em;
+  }
+  .menu.active {
+    width: calc(100% - 0.5rem);
+  }
+}
 
 
 // Page One Name Start
@@ -76,6 +150,9 @@ h1,h3 {
     letter-spacing: 2px;
     transform: translateY(10%);
     color:$fontColor;
+    @include mqLaptopSmall {
+        font-size:6rem;
+    }
 }
 
 h1 {
@@ -93,20 +170,35 @@ h3 {
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
+    @include mqLaptopSmall {
+        font-size:5rem;
+    }
 }
 
 .pageOneName {
     padding-top:8%;
     padding-bottom:10%;
     font-size:7rem;
+    @include mqLaptopSmall {
+        font-size:6rem;
+        padding-top:15%;
+        padding-bottom: 15%;
+    }
     .myName {
-        color:$accentColorCyan;
+        color:$accentColor;
         font-size:12rem;
         font-family: 'Cougrette', cursive;
         text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
+        @include mqLaptopSmall {
+            font-size:8rem;
+        }
     }
 }
-
 // Page One Name End
+
+
+
+// Hamburger menu thanks to Phillippe
+// https://codepen.io/Philippe_Fercha/pen/rqkci

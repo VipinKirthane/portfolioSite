@@ -1,13 +1,15 @@
 footer {
-    // height:30px;
     padding:10px 0;
     font-size:1.8rem;
     text-align: center;
     background-color:$primaryBackground;
     border-radius: 15px 15px 0px 0px;
     box-shadow: 0 10px 20px 15px rgba(15, 11, 11, 0.4);
-    // border-top:1px solid $accentColorCyan;
+    
     p {
         color:$fontColor;
+        @include mqTabletSmall {
+            font-size:1.8rem;
+        }
     }
 }

@@ -9,8 +9,6 @@
 @import "./Partials/contactForm";
 @import "./Partials/footer";
 
-
-
 .wrapper {
     max-width:1200px;
     width:80%;
@@ -36,5 +34,9 @@ p {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $primaryBackground2;
+}
+
+*:focus {
+    outline: 1px solid $accentColor;
 }
 

@@ -8,6 +8,9 @@
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
+    @include mqTabletSmall {
+        border-radius: 100px 0 100px 0;
+    }
     p {
         font-size:1.9rem;
         line-height:30px;
@@ -68,7 +71,7 @@
         color:$fontColor;
     }
     h3 {
-        color:$accentColorCyan;
+        color:$accentColor;
         padding-top:40px;
     }
 }
@@ -122,6 +125,9 @@
 .skillsList {
     display: flex;
     justify-content: space-evenly;
+    @include mqLaptopSmall {
+        flex-wrap: wrap;
+    }
 }
 
 .skillButton {
@@ -133,5 +139,9 @@
     letter-spacing: 2px;
     &:hover {
         background-color: rgba(247, 56, 89, 0.8);
+    }
+    @include mqLaptopSmall {
+        margin-bottom:10px;
+        font-size:1.4rem;
     }
 }

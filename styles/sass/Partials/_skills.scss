@@ -3,8 +3,12 @@
     background-color:$primaryBackground;
     border-radius: 200px 0 200px 0;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    @include mqTabletSmall {
+        border-radius: 100px 0 100px 0;
+        padding-bottom:50px;
+    }
     h3 {
-        color:$accentColorCyan;
+        color:$accentColor;
         margin-bottom:50px;
         width:40%;
         margin:0 auto;
@@ -31,6 +35,10 @@
         @include mqLaptopSmall {
                 height:480px;
                 width:480px;
+        }
+        @include mqTabletSmall {
+                height:300px;
+                width:300px;
         }
         .devicon-html5-plain-wordmark:hover {
                 color: #fb5b5a;
@@ -80,14 +88,19 @@
                 color: #666;
                 padding:20px;
                 border-radius: 50%;
-                transition: .1s;
+                transition: 0.1s;
                 @include mqLaptopSmall {
                    height:120px;
                    width:120px;
                    font-size:8rem;
                 }
+                @include mqTabletSmall {
+                   height:80px;
+                   width:80px;
+                   font-size: 4.1rem;
+                }
             &:before {
-                transition: .1s;
+                transition: 0.1s;
                 transform: scale(.9);
             }
             &:hover::before {
@@ -104,14 +117,11 @@
 .devicon-jquery-plain-wordmark,
 .devicon-github-plain-wordmark,
 .fa-universal-access {
-        box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, .2);
+        box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .devicon-html5-plain-wordmark {
         left:38%;
-        @include mqLaptopSmall {
-                
-        }
 }
 
 .devicon-css3-plain-wordmark{
@@ -161,9 +171,6 @@
 	}
 }
 
-/* ----------------------------------------------
- * Credits to Animista
- * ---------------------------------------------- */
 .vibrate2 {
 	animation: vibrate2 1.7s linear infinite both;
 }
@@ -190,5 +197,6 @@
 }
 
 
+// Animation credits to Animista
 // Glow effect of skills icon thanks to
 // https://codepen.io/Stockin/pen/XPvpoB
