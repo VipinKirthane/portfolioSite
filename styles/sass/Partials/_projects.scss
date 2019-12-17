@@ -1,22 +1,21 @@
 .projectsSection {
-    margin-top: 50px;
-    padding-bottom:50px;
-    margin-bottom:20px;
-    background-color:$primaryBackground;
-    border-radius: 200px 0 200px 0;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-    @include mqTabletSmall {
-        border-radius: 100px 0 100px 0;
-    }
-    p {
-        font-size:1.9rem;
-        line-height:30px;
-        margin-bottom:20px;
-        margin-top:20px;
-    }
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  background-color: $primaryBackground;
+  border-radius: 200px 0 200px 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  @include mqTabletSmall {
+    border-radius: 100px 0 100px 0;
+  }
+  p {
+    font-size: 1.9rem;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 .projectOne,
@@ -24,56 +23,56 @@
 .projectThree,
 .projectFour,
 .projectFive {
-    margin-top:80px;
-    width:100%;
+  margin-top: 80px;
+  width: 100%;
 }
 
 .titlePart {
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include mqLaptopSmall {
+    flex-direction: column;
+  }
+  a {
+    background-color: rgba(247, 56, 89, 0.8);
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 10px 30px;
     @include mqLaptopSmall {
-        flex-direction: column;
+      font-size: 1.7rem;
+      width: 60%;
+      text-align: center;
+      margin-top: 15px;
     }
-        a {
-            background-color: rgba(247, 56, 89, 0.8);
-            font-size:2rem;
-            border-radius: 50px;
-            padding:10px 30px;
-            @include mqLaptopSmall {
-                font-size:1.7rem;
-                width:60%;
-                text-align: center;
-                margin-top:15px;
-            }
-            &:hover {
-                background-color: $primaryBackground2;
-            }
-        }
+    &:hover {
+      background-color: $primaryBackground2;
+    }
+  }
 }
 
-.projectOnePreviews, 
-.projectTwoPreviews, 
+.projectOnePreviews,
+.projectTwoPreviews,
 .projectThreePreviews,
-.projectFourPreviews, 
+.projectFourPreviews,
 .projectFivePreviews {
-    img {
-        width:100%;
-        border-radius: 15px;
-        padding:20px;
-        padding-right:30px;
-    }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    padding-right: 30px;
+  }
 }
 
 .projectsSection {
-    h4 {
-        font-size:2.5rem;
-        color:$fontColor;
-    }
-    h3 {
-        color:$accentColor;
-        padding-top:40px;
-    }
+  h4 {
+    font-size: 2.5rem;
+    color: $fontColor;
+  }
+  h3 {
+    color: $accentColor;
+    padding-top: 40px;
+  }
 }
 
 .projectOne,
@@ -81,43 +80,43 @@
 .projectThree,
 .projectFour,
 .projectFive {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  &:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+  @include mqLaptopSmall {
     &:nth-of-type(2n) {
-        flex-direction: row-reverse;
+      flex-direction: column;
+    }
+  }
+  @include mqLaptopBig {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectOneDesc,
+  .projectOnePreviews,
+  .projectTwoDesc,
+  .projectTwoPreviews,
+  .projectThreeDesc,
+  .projectThreePreviews,
+  .projectFourDesc,
+  .projectFourPreviews,
+  .projectFiveDesc,
+  .projectFivePreviews {
+    padding: 20px;
+    width: 50%;
+    @include mqLaptopBig {
+      width: 80%;
     }
     @include mqLaptopSmall {
-        &:nth-of-type(2n) {
-            flex-direction: column;
-        }
+      width: 100%;
     }
-    @include mqLaptopBig {
-        flex-direction: column;
-        align-items: center;
+    &:hover {
+      box-shadow: 6px 10px 30px 6px $primaryBackground2;
+      border-radius: 10px;
     }
-    .projectOneDesc,
-    .projectOnePreviews,
-    .projectTwoDesc,
-    .projectTwoPreviews,
-    .projectThreeDesc,
-    .projectThreePreviews,
-    .projectFourDesc,
-    .projectFourPreviews,
-    .projectFiveDesc,
-    .projectFivePreviews {
-        padding:20px;
-        width:50%;
-        @include mqLaptopBig {
-            width:80%;
-        }
-        @include mqLaptopSmall {
-            width:100%;
-        }
-        &:hover {
-            box-shadow: 6px 10px 30px 6px $primaryBackground2;
-            border-radius: 10px;
-        }
-    }
+  }
 }
 
 .projectOneDesc,
@@ -125,31 +124,31 @@
 .projectThreeDesc,
 .projectFourDesc,
 .projectFiveDesc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .skillsList {
-    display: flex;
-    justify-content: space-evenly;
-    @include mqLaptopSmall {
-        flex-wrap: wrap;
-    }
+  display: flex;
+  justify-content: space-evenly;
+  @include mqLaptopSmall {
+    flex-wrap: wrap;
+  }
 }
 
 .skillButton {
-    font-size:1.8rem;
-    color:$fontColor;
-    background-color: $primaryBackground2;
-    padding:10px 10px;
-    border-radius: 7px;
-    letter-spacing: 2px;
-    &:hover {
-        background-color: rgba(247, 56, 89, 0.8);
-    }
-    @include mqLaptopSmall {
-        margin-bottom:10px;
-        font-size:1.4rem;
-    }
+  font-size: 1.8rem;
+  color: $fontColor;
+  background-color: $primaryBackground2;
+  padding: 10px 10px;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  &:hover {
+    background-color: rgba(247, 56, 89, 0.8);
+  }
+  @include mqLaptopSmall {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
 }

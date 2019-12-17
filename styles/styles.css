@@ -303,7 +303,7 @@ header {
 
 .menuOpenerInner {
   background: #f73859;
-  height: .5rem;
+  height: 0.5rem;
   width: 4rem;
 }
 
@@ -315,9 +315,9 @@ header {
 .menuOpenerInner::before,
 .menuOpenerInner::after {
   background: #dbedf3;
-  content: '';
+  content: "";
   display: block;
-  height: .5rem;
+  height: 0.5rem;
   margin-top: 0px;
   width: 4rem;
 }
@@ -424,7 +424,8 @@ header {
   }
 }
 
-h1, h3 {
+h1,
+h3 {
   font-size: 8rem;
   text-align: center;
   font-weight: 700;
@@ -435,7 +436,8 @@ h1, h3 {
 }
 
 @media (max-width: 1000px) {
-  h1, h3 {
+  h1,
+  h3 {
     font-size: 6rem;
   }
 }
@@ -476,7 +478,7 @@ h3 {
 .pageOneName .myName {
   color: #f73859;
   font-size: 12rem;
-  font-family: 'Cougrette', cursive;
+  font-family: "Cougrette", cursive;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
@@ -648,48 +650,49 @@ h3 {
 }
 
 .topHalfIcons .devicon-sass-original:hover {
-  color: #C76494;
-  -webkit-box-shadow: 0 0 15px #C76494;
-          box-shadow: 0 0 15px #C76494;
-  text-shadow: 0 0 15px #C76494;
+  color: #c76494;
+  -webkit-box-shadow: 0 0 15px #c76494;
+          box-shadow: 0 0 15px #c76494;
+  text-shadow: 0 0 15px #c76494;
 }
 
 .topHalfIcons .devicon-react-original-wordmark:hover {
-  color: #5ED3F3;
-  -webkit-box-shadow: 0 0 15px #5ED3F3;
-          box-shadow: 0 0 15px #5ED3F3;
-  text-shadow: 0 0 15px #5ED3F3;
+  color: #5ed3f3;
+  -webkit-box-shadow: 0 0 15px #5ed3f3;
+          box-shadow: 0 0 15px #5ed3f3;
+  text-shadow: 0 0 15px #5ed3f3;
 }
 
 .topHalfIcons .devicon-javascript-plain:hover {
-  color: #FFDA07;
-  -webkit-box-shadow: 0 0 15px #FFDA07;
-          box-shadow: 0 0 15px #FFDA07;
-  text-shadow: 0 0 15px #FFDA07;
+  color: #ffda07;
+  -webkit-box-shadow: 0 0 15px #ffda07;
+          box-shadow: 0 0 15px #ffda07;
+  text-shadow: 0 0 15px #ffda07;
 }
 
 .topHalfIcons .devicon-jquery-plain-wordmark:hover {
-  color: #78CFF5;
-  -webkit-box-shadow: 0 0 15px #78CFF5;
-          box-shadow: 0 0 15px #78CFF5;
-  text-shadow: 0 0 15px #78CFF5;
+  color: #78cff5;
+  -webkit-box-shadow: 0 0 15px #78cff5;
+          box-shadow: 0 0 15px #78cff5;
+  text-shadow: 0 0 15px #78cff5;
 }
 
 .topHalfIcons .devicon-github-plain-wordmark:hover {
-  color: #FFFFFF;
-  -webkit-box-shadow: 0 0 15px #FFFFFF;
-          box-shadow: 0 0 15px #FFFFFF;
-  text-shadow: 0 0 15px #FFFFFF;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 15px #ffffff;
+          box-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px #ffffff;
 }
 
 .topHalfIcons .fa-universal-access:hover {
-  color: #19A376;
-  -webkit-box-shadow: 0 0 15px #19A376;
-          box-shadow: 0 0 15px #19A376;
-  text-shadow: 0 0 15px #19A376;
+  color: #19a376;
+  -webkit-box-shadow: 0 0 15px #19a376;
+          box-shadow: 0 0 15px #19a376;
+  text-shadow: 0 0 15px #19a376;
 }
 
-.topHalfIcons i, .topHalfIcons .firebaseIcon {
+.topHalfIcons i,
+.topHalfIcons .firebaseIcon {
   width: 160px;
   position: absolute;
   font-size: 12rem;
@@ -702,7 +705,8 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-  .topHalfIcons i, .topHalfIcons .firebaseIcon {
+  .topHalfIcons i,
+  .topHalfIcons .firebaseIcon {
     height: 120px;
     width: 120px;
     font-size: 8rem;
@@ -710,21 +714,24 @@ h3 {
 }
 
 @media (max-width: 760px) {
-  .topHalfIcons i, .topHalfIcons .firebaseIcon {
+  .topHalfIcons i,
+  .topHalfIcons .firebaseIcon {
     height: 80px;
     width: 80px;
     font-size: 4.1rem;
   }
 }
 
-.topHalfIcons i:before, .topHalfIcons .firebaseIcon:before {
+.topHalfIcons i:before,
+.topHalfIcons .firebaseIcon:before {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
 
-.topHalfIcons i:hover::before, .topHalfIcons .firebaseIcon:hover::before {
+.topHalfIcons i:hover::before,
+.topHalfIcons .firebaseIcon:hover::before {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -1316,7 +1323,7 @@ input {
 }
 
 .screen:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -1337,7 +1344,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
-  background: #2A2929;
+  background: #2a2929;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -1355,7 +1362,7 @@ input {
 }
 
 .screenHeaderButton.close {
-  background: #FF4446;
+  background: #ff4446;
 }
 
 .screenHeaderButton.maximize {
@@ -1417,7 +1424,7 @@ input {
 }
 
 .appTitle:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1456,8 +1463,8 @@ input {
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
-  -webkit-transition: border-color .2s;
-  transition: border-color .2s;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
 }
 
 .appFormControl::-webkit-input-placeholder {
@@ -1559,7 +1566,7 @@ html {
 a {
   text-decoration: none;
   color: #dbedf3;
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   font-weight: 500;
 }
 
@@ -1569,6 +1576,6 @@ p {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #283149;
 }

@@ -1,112 +1,112 @@
 .skillsSection {
-    padding-bottom: 2%;
-    background-color:$primaryBackground;
-    border-radius: 200px 0 200px 0;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-    @include mqTabletSmall {
-        border-radius: 100px 0 100px 0;
-        padding-bottom:50px;
-    }
-    h3 {
-        color:$accentColor;
-        margin-bottom:50px;
-        width:40%;
-        margin:0 auto;
-        border-radius: 30px;
-        padding-top:20px;
-        padding-bottom: 60px;
-        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-    }
+  padding-bottom: 2%;
+  background-color: $primaryBackground;
+  border-radius: 200px 0 200px 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  @include mqTabletSmall {
+    border-radius: 100px 0 100px 0;
+    padding-bottom: 50px;
+  }
+  h3 {
+    color: $accentColor;
+    margin-bottom: 50px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .topHalfIcons {
-        height:600px;
-        width:600px;
-        padding:10px;
-        border-radius: 50%;
-        color:blue;
-        background-color: $primaryBackground2;
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, .4);
-        margin:0 auto;
-        margin-bottom:20px;
-        position: relative;
-        @include mqLaptopSmall {
-                height:480px;
-                width:480px;
-        }
-        @include mqTabletSmall {
-                height:300px;
-                width:300px;
-        }
-        .devicon-html5-plain-wordmark:hover {
-                color: #fb5b5a;
-                box-shadow: 0 0 15px #fb5b5a;
-                text-shadow: 0 0 15px #fb5b5a;
-        }
-        .devicon-css3-plain-wordmark:hover {
-                color: #4f81c7;
-                box-shadow: 0 0 15px #4f81c7;
-                text-shadow: 0 0 15px #4f81c7;
-        }
-        .devicon-sass-original:hover {
-                color: #C76494;
-                box-shadow: 0 0 15px #C76494;
-                text-shadow: 0 0 15px #C76494;
-        }
-        .devicon-react-original-wordmark:hover {
-                color: #5ED3F3;
-                box-shadow: 0 0 15px #5ED3F3;
-                text-shadow: 0 0 15px #5ED3F3;
-        }
-        .devicon-javascript-plain:hover {
-                color: #FFDA07;
-                box-shadow: 0 0 15px #FFDA07;
-                text-shadow: 0 0 15px #FFDA07;
-        }
-        .devicon-jquery-plain-wordmark:hover {
-                color: #78CFF5;
-                box-shadow: 0 0 15px #78CFF5;
-                text-shadow: 0 0 15px #78CFF5;
-        }
-        .devicon-github-plain-wordmark:hover {
-                color: #FFFFFF;
-                box-shadow: 0 0 15px #FFFFFF;
-                text-shadow: 0 0 15px #FFFFFF;
-        }
-        .fa-universal-access:hover {
-                color: #19A376;
-                box-shadow: 0 0 15px #19A376;
-                text-shadow: 0 0 15px #19A376;
-        }
-        i,.firebaseIcon {
-                width:160px;
-                position: absolute;
-                font-size:12rem;
-                background-color: #03051e;
-                color: #666;
-                padding:20px;
-                border-radius: 50%;
-                transition: 0.1s;
-                @include mqLaptopSmall {
-                   height:120px;
-                   width:120px;
-                   font-size:8rem;
-                }
-                @include mqTabletSmall {
-                   height:80px;
-                   width:80px;
-                   font-size: 4.1rem;
-                }
-            &:before {
-                transition: 0.1s;
-                transform: scale(.9);
-            }
-            &:hover::before {
-                transform: scale(1.2);
-            }
+  height: 600px;
+  width: 600px;
+  padding: 10px;
+  border-radius: 50%;
+  color: blue;
+  background-color: $primaryBackground2;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  @include mqLaptopSmall {
+    height: 480px;
+    width: 480px;
+  }
+  @include mqTabletSmall {
+    height: 300px;
+    width: 300px;
+  }
+  .devicon-html5-plain-wordmark:hover {
+    color: #fb5b5a;
+    box-shadow: 0 0 15px #fb5b5a;
+    text-shadow: 0 0 15px #fb5b5a;
+  }
+  .devicon-css3-plain-wordmark:hover {
+    color: #4f81c7;
+    box-shadow: 0 0 15px #4f81c7;
+    text-shadow: 0 0 15px #4f81c7;
+  }
+  .devicon-sass-original:hover {
+    color: #c76494;
+    box-shadow: 0 0 15px #c76494;
+    text-shadow: 0 0 15px #c76494;
+  }
+  .devicon-react-original-wordmark:hover {
+    color: #5ed3f3;
+    box-shadow: 0 0 15px #5ed3f3;
+    text-shadow: 0 0 15px #5ed3f3;
+  }
+  .devicon-javascript-plain:hover {
+    color: #ffda07;
+    box-shadow: 0 0 15px #ffda07;
+    text-shadow: 0 0 15px #ffda07;
+  }
+  .devicon-jquery-plain-wordmark:hover {
+    color: #78cff5;
+    box-shadow: 0 0 15px #78cff5;
+    text-shadow: 0 0 15px #78cff5;
+  }
+  .devicon-github-plain-wordmark:hover {
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+  }
+  .fa-universal-access:hover {
+    color: #19a376;
+    box-shadow: 0 0 15px #19a376;
+    text-shadow: 0 0 15px #19a376;
+  }
+  i,
+  .firebaseIcon {
+    width: 160px;
+    position: absolute;
+    font-size: 12rem;
+    background-color: #03051e;
+    color: #666;
+    padding: 20px;
+    border-radius: 50%;
+    transition: 0.1s;
+    @include mqLaptopSmall {
+      height: 120px;
+      width: 120px;
+      font-size: 8rem;
     }
+    @include mqTabletSmall {
+      height: 80px;
+      width: 80px;
+      font-size: 4.1rem;
+    }
+    &:before {
+      transition: 0.1s;
+      transform: scale(0.9);
+    }
+    &:hover::before {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .devicon-html5-plain-wordmark,
@@ -117,65 +117,61 @@
 .devicon-jquery-plain-wordmark,
 .devicon-github-plain-wordmark,
 .fa-universal-access {
-        box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .devicon-html5-plain-wordmark {
-        left:38%;
+  left: 38%;
 }
 
-.devicon-css3-plain-wordmark{
-        top:45%;
-        left:70%;
+.devicon-css3-plain-wordmark {
+  top: 45%;
+  left: 70%;
 }
-.devicon-sass-original{
-      right:61%;
-        top:14%;
+.devicon-sass-original {
+  right: 61%;
+  top: 14%;
 }
-.devicon-react-original-wordmark{
-        top:40%;
-        left:2%;
+.devicon-react-original-wordmark {
+  top: 40%;
+  left: 2%;
 }
-.devicon-javascript-plain{
-        top:68%;
-        left:48%;
+.devicon-javascript-plain {
+  top: 68%;
+  left: 48%;
 }
-.devicon-jquery-plain-wordmark{
-        top:18%;
-        left:62%;
+.devicon-jquery-plain-wordmark {
+  top: 18%;
+  left: 62%;
 }
-.devicon-github-plain-wordmark{
-        top:65%;
-        right:55%;
+.devicon-github-plain-wordmark {
+  top: 65%;
+  right: 55%;
 }
-.fa-universal-access{
-        height:160px;
-        left:37%;
-        top:37%;
+.fa-universal-access {
+  height: 160px;
+  left: 37%;
+  top: 37%;
 }
 
 .rotate {
-	animation: rotate 2s linear infinite both;
+  animation: rotate 2s linear infinite both;
 }
 
 @keyframes rotate {
-	from {
-		transform: rotate(0deg)
-		           translate(-5px)
-		           rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg)
-		           translate(-5px) 
-		           rotate(-360deg);
-	}
+  from {
+    transform: rotate(0deg) translate(-5px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-5px) rotate(-360deg);
+  }
 }
 
 .vibrate2 {
-	animation: vibrate2 1.7s linear infinite both;
+  animation: vibrate2 1.7s linear infinite both;
 }
 
- @keyframes vibrate2 {
+@keyframes vibrate2 {
   0% {
     transform: translate(0);
   }
@@ -195,7 +191,6 @@
     transform: translate(0);
   }
 }
-
 
 // Animation credits to Animista
 // Glow effect of skills icon thanks to

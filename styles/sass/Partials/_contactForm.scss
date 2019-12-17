@@ -1,4 +1,4 @@
-button, 
+button,
 input {
   letter-spacing: 1.4px;
 }
@@ -18,11 +18,11 @@ input {
   position: relative;
   background: #212020;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .screen:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -38,7 +38,7 @@ input {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: #2A2929;
+  background: #2a2929;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -56,7 +56,7 @@ input {
 }
 
 .screenHeaderButton.close {
-  background: #FF4446;
+  background: #ff4446;
 }
 
 .screenHeaderButton.maximize {
@@ -102,7 +102,7 @@ input {
 }
 
 .appTitle:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -141,7 +141,7 @@ input {
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .appFormControl::placeholder {

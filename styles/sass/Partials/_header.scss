@@ -1,17 +1,21 @@
 header {
-    padding-bottom:8%;
-    position: relative;
-    border-radius: 0 0 200px 0;
-    box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
-        background:
-            linear-gradient(90deg, $primaryBackground (22px - 1px), transparent 1%) center,
-            linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
-            $accentColor;
-        background-size: 22px 22px;
-    @include mqLaptopSmall {
-        padding-bottom:18%;
-        border-radius: 0 0 100px 0;
-    }
+  padding-bottom: 8%;
+  position: relative;
+  border-radius: 0 0 200px 0;
+  box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
+  background: linear-gradient(
+        90deg,
+        $primaryBackground (22px - 1px),
+        transparent 1%
+      )
+      center,
+    linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
+    $accentColor;
+  background-size: 22px 22px;
+  @include mqLaptopSmall {
+    padding-bottom: 18%;
+    border-radius: 0 0 100px 0;
+  }
 }
 
 .menuOpener a {
@@ -20,13 +24,13 @@ header {
   height: 100%;
 }
 
-.menuOpener, 
-.menuOpener:hover, 
-.menuOpener.active, 
-.menuOpenerInner, 
-.menuOpenerInner::before, 
-.menuOpenerInner::after, 
-.menu, 
+.menuOpener,
+.menuOpener:hover,
+.menuOpener.active,
+.menuOpenerInner,
+.menuOpenerInner::before,
+.menuOpenerInner::after,
+.menu,
 .menu.active {
   transition: 250ms all;
 }
@@ -39,16 +43,15 @@ header {
   left: 1%;
   user-select: none;
   width: 64px;
-  z-index:9999;
-  padding-top:2px;
-  padding-left:3px;
-  padding-right:4px;
+  z-index: 9999;
+  padding-top: 2px;
+  padding-left: 3px;
+  padding-right: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-//   position: relative;
 }
-.menuOpener:hover, 
+.menuOpener:hover,
 .menuOpener.active {
   background: $primaryBackground2;
   border-radius: 20px;
@@ -56,20 +59,20 @@ header {
 
 .menuOpenerInner {
   background: $accentColor;
-  height: .5rem;
+  height: 0.5rem;
   width: 4rem;
   &:focus {
-      outline: 1px solid $accentColor;
-      border-radius: 20px;
+    outline: 1px solid $accentColor;
+    border-radius: 20px;
   }
 }
-.menuOpenerInner::before, 
+.menuOpenerInner::before,
 .menuOpenerInner::after {
   background: $fontColor;
-  content: '';
+  content: "";
   display: block;
-  height: .5rem;
-  margin-top:0px;
+  height: 0.5rem;
+  margin-top: 0px;
   width: 4rem;
 }
 .menuOpenerInner::before {
@@ -107,7 +110,7 @@ header {
 .menu.active .menuLink {
   color: $fontColor;
   &:hover {
-      color:$accentColor;
+    color: $accentColor;
   }
 }
 
@@ -151,64 +154,59 @@ header {
   }
 }
 
-
 // Page One Name Start
-h1,h3 {
-    font-size:8rem;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 2px;
-    transform: translateY(10%);
-    color:$fontColor;
-    @include mqLaptopSmall {
-        font-size:6rem;
-    }
+h1,
+h3 {
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transform: translateY(10%);
+  color: $fontColor;
+  @include mqLaptopSmall {
+    font-size: 6rem;
+  }
 }
 
 h1 {
-    padding-top:10%;
-    line-height:130px;
-    padding-bottom:45px;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+  padding-top: 10%;
+  line-height: 130px;
+  padding-bottom: 45px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
-    font-size:6rem;
-    text-align: center;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-    @include mqLaptopSmall {
-        font-size:5rem;
-    }
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  @include mqLaptopSmall {
+    font-size: 5rem;
+  }
 }
 
 .pageOneName {
-    padding-top:8%;
-    padding-bottom:10%;
-    font-size:7rem;
+  padding-top: 8%;
+  padding-bottom: 10%;
+  font-size: 7rem;
+  @include mqLaptopSmall {
+    font-size: 6rem;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .myName {
+    color: $accentColor;
+    font-size: 12rem;
+    font-family: "Cougrette", cursive;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
     @include mqLaptopSmall {
-        font-size:6rem;
-        padding-top:15%;
-        padding-bottom: 15%;
+      font-size: 8rem;
     }
-    .myName {
-        color:$accentColor;
-        font-size:12rem;
-        font-family: 'Cougrette', cursive;
-        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-        @include mqLaptopSmall {
-            font-size:8rem;
-        }
-    }
+  }
 }
 // Page One Name End
-
-
 
 // Hamburger menu thanks to Phillippe
 // https://codepen.io/Philippe_Fercha/pen/rqkci

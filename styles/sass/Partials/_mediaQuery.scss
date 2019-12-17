@@ -1,17 +1,17 @@
 @mixin mqLaptopBig {
-    @media(max-width: 1366px){
-        @content;
-    }
+  @media (max-width: 1366px) {
+    @content;
+  }
 }
 
 @mixin mqLaptopSmall {
-    @media(max-width: 1000px) {
-        @content;
-    }
+  @media (max-width: 1000px) {
+    @content;
+  }
 }
 
 @mixin mqTabletSmall {
-    @media (max-width:760px) {
-        @content;
-    }
+  @media (max-width: 760px) {
+    @content;
+  }
 }
