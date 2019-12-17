@@ -1,5 +1,7 @@
-$primaryBackground: #3e3e3e;
-$accentColorCyan: #00818a;
+$primaryBackground2: #283149;
+$primaryBackground: #404b69;
+$primaryBackground3:#283149;
+$accentColorCyan: #f73859;
 $accentColorRed: #E30425;
 $accentColorRed2:#FF0266;
 
@@ -36,14 +38,10 @@ p {
 }
 
 * {
-    // border: 1px solid darkmagenta;
+    color:white;
 }
 
 body {
-    font-family: 'Merriweather', serif;
-    // background-color: $primaryBackground ;
-    background: linear-gradient(to right, #b24592, #f15f79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    // font-family: 'Spectral', serif;
-    // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Roboto', sans-serif;
 }
 

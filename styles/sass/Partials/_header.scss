@@ -1,22 +1,24 @@
 header {
     // background-color:lightcyan;
-    height:95vh;
+    // height:98vh;
+    padding-bottom:6%;
     position: relative;
     background-color:$primaryBackground;
-    border-radius: 0 0 300px 0;
-    margin-bottom:5vh;
+    border-radius: 0 0 200px 0;
+    // margin-bottom:2%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 }
 
 // Navbar Start
 .topNavbar {
-    // height:88px;
-    border-bottom:1px solid black;
+    height:50px;
     border-radius: 0 0 15px 15px;
-    position: sticky;
-    background-color:$primaryBackground;
-    z-index: 9999;
+    position: fixed;
     top:0;
-    // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    z-index: 1;
+    background-color:$primaryBackground2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
     ul {
         display:flex;
         justify-content: space-between;
@@ -34,12 +36,13 @@ header {
         li a {
             display:flex;
             justify-content: space-between;
-            padding:13px 25px;
-            border:2px solid rgba(0,0,0,0.04);
+            padding:10px 25px;
+            margin-top:5px;
+            background-color:rgba(247, 56, 89, 0.25);
             border-radius: 15px;
             &:hover {
-                color:white;
-                // background-color:white;
+                color:black;
+                background-color:rgba(247, 56, 89, 0.8);
                 border-radius: 15px;
             }
         }
@@ -51,20 +54,19 @@ header {
         li a{
             display:flex;
             justify-content: space-between;
-            padding:13px 25px;
-            border:2px solid rgba(0,0,0,0.04);
+            padding:10px 25px;
+            margin-top:5px;
+            background-color:rgba(247, 56, 89, 0.25);
             margin-left:15px;
             border-radius: 15px;
             // box-shadow: 0 15px 30px rgba(227, 4, 37, 0.1);
             &:hover {
-                color:white;
-                background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+                color:black;
+                background-color:rgba(247, 56, 89, 0.8);
                 background-blend-mode: multiply;
             }
         }
     }
-
-
 }
 // Navbar End
 
@@ -79,21 +81,27 @@ h1,h3 {
     transform: translateY(10%);
 }
 
+h1 {
+    padding-top:10%;
+}
+
 h3 {
     font-size:5rem;
     text-align: center;
 }
 
 .pageOneName {
-    padding-top:10%;
+    padding-top:8%;
+    padding-bottom:10%;
     font-size:7rem;
-    color:white;
+    // color:white;
     // font-weight: 200;
     .myName {
         color:$accentColorCyan;
         font-size:12rem;
         font-family: 'Cougrette', cursive;
-        text-shadow: 0 2px 6px $accentColorCyan;
+        // text-shadow: 0 2px 6px $accentColorCyan;
+        text-shadow: 5px 5px rgb(0, 0, 0)
     }
 }
 // Page One Name End
