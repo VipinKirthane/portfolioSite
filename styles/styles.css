@@ -751,7 +751,7 @@ h3 {
   .topHalfIcons .firebaseIcon {
     height: 80px;
     width: 80px;
-    font-size: 4.1rem;
+    font-size: 4.2rem;
   }
 }
 
@@ -1483,7 +1483,7 @@ input {
 
 @media (max-width: 520px) {
   .contactFormIcon1 {
-    left: 80px;
+    left: 130px;
   }
 }
 
@@ -1493,7 +1493,7 @@ input {
 
 @media (max-width: 520px) {
   .contactFormIcon2 {
-    left: 130px;
+    left: 180px;
   }
 }
 
@@ -1503,7 +1503,7 @@ input {
 
 @media (max-width: 520px) {
   .contactFormIcon3 {
-    left: 180px;
+    left: 230px;
   }
 }
 

@@ -132,21 +132,21 @@ input {
 .contactFormIcon1 {
   left: 50px;
   @include mqPhoneBig {
-    left: 80px;
+    left: 130px;
   }
 }
 
 .contactFormIcon2 {
   left: 100px;
   @include mqPhoneBig {
-    left: 130px;
+    left: 180px;
   }
 }
 
 .contactFormIcon3 {
   left: 150px;
   @include mqPhoneBig {
-    left: 180px;
+    left: 230px;
   }
 }
 
