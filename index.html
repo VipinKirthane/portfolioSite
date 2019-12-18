@@ -16,12 +16,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Vipin Kirthane</title>
   </head>
   <body>
     <header>
-      <nav class="menuOpener animated slideInDown" tabindex="0">
+      <nav class="menuOpener animated slideInLeft" tabindex="0">
         <div class="menuOpenerInner"></div>
       </nav>
       <nav class="menu">
@@ -46,7 +48,7 @@
       <!-- Navbar End -->
 
       <!-- Page One Start -->
-      <section class="pageOneName">
+      <section class="pageOneName animated slideInDown">
         <h1>I'm <span class="myName"> Vipin</span></h1>
         <h3>Web Developer.</h3>
       </section>
@@ -55,17 +57,18 @@
 
     <!-- About section Start -->
     <main class="aboutSection" id="about">
-      <div class="textBackground"></div>
+      <div class="textBackground" data-aos="fade-left"></div>
       <div class="wrapper">
         <div class="aboutSectionTextAndPic">
           <div class="aboutSectionPicture">
             <img
               src="assets/pictures/profilePhoto.jpg"
               alt="Portrait shot of Vipin"
+              data-aos="fade-right"
             />
           </div>
 
-          <div class="aboutSectionText">
+          <div class="aboutSectionText" data-aos="fade-left">
             <h3>ABOUT</h3>
             <p>
               I am a front end web developer with a unique combination of
@@ -84,7 +87,7 @@
     <!-- About section End -->
 
     <!-- Skills section Start -->
-    <aside class="skillsSection" id="skills">
+    <aside class="skillsSection" data-aos="slide-left" id="skills">
       <h3>SKILLS</h3>
       <div class="topHalfIcons rotate">
         <i class="devicon-html5-plain-wordmark vibrate2"></i>
@@ -103,7 +106,7 @@
         <h3>PROJECTS PORTFOLIO</h3>
 
         <div class="projectFive">
-          <div class="projectFiveDesc">
+          <div class="projectFiveDesc" data-aos="fade-right">
             <div class="projectFiveTopHalf">
               <div class="titlePart">
                 <h4>GIF me a movie</h4>
@@ -133,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div class="projectFivePreviews">
+          <div class="projectFivePreviews" data-aos="fade-left">
             <img
               src="assets/pictures/gifMeAMovie.png"
               alt="Gif me a movie website mockup on laptop & phone"
@@ -142,7 +145,7 @@
         </div>
 
         <div class="projectTwo">
-          <div class="projectTwoDesc">
+          <div class="projectTwoDesc" data-aos="fade-left">
             <div class="projectTwoTopHalf">
               <div class="titlePart">
                 <h4>Slot Machine</h4>
@@ -170,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="projectTwoPreviews">
+          <div class="projectTwoPreviews" data-aos="fade-right">
             <img
               src="assets/pictures/slotmachine.png"
               alt="Slot machine website mockup on a phone and laptop"
@@ -179,7 +182,7 @@
         </div>
 
         <div class="projectThree">
-          <div class="projectThreeDesc">
+          <div class="projectThreeDesc" data-aos="fade-right">
             <div class="projectThreeTopHalf">
               <div class="titlePart">
                 <h4>Westerosi Wiki</h4>
@@ -208,7 +211,7 @@
               </div>
             </div>
           </div>
-          <div class="projectThreePreviews">
+          <div class="projectThreePreviews" data-aos="fade-left">
             <img
               src="assets/pictures/westerosiWiki.png"
               alt="Westerosi Wiki website mockup on a phone and laptop"
@@ -217,7 +220,7 @@
         </div>
 
         <div class="projectFour">
-          <div class="projectFourDesc">
+          <div class="projectFourDesc" data-aos="fade-left">
             <div class="projectFourTopHalf">
               <div class="titlePart">
                 <h4>Space X Rockets</h4>
@@ -247,7 +250,7 @@
               </div>
             </div>
           </div>
-          <div class="projectFourPreviews">
+          <div class="projectFourPreviews" data-aos="fade-right">
             <img
               src="assets/pictures/spacex.png"
               alt="Space X website mockup on laptop & phone"
@@ -256,7 +259,7 @@
         </div>
 
         <div class="projectOne">
-          <div class="projectOneDesc">
+          <div class="projectOneDesc" data-aos="fade-right">
             <div class="projectOneTopHalf">
               <div class="titlePart">
                 <h4>Design Mockup Site</h4>
@@ -282,7 +285,7 @@
               </div>
             </div>
           </div>
-          <div class="projectOnePreviews">
+          <div class="projectOnePreviews" data-aos="fade-left">
             <img
               src="assets/pictures/design.png"
               alt="Design website mockup on laptop & phone"
@@ -293,7 +296,7 @@
     </aside>
 
     <!-- Contact Form Start -->
-    <aside class="contactForm" id="contact">
+    <aside class="contactForm" id="contact" data-aos="fade-up">
       <div class="background">
         <div class="container">
           <div class="screen">
@@ -372,6 +375,8 @@
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>

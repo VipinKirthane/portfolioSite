@@ -1,7 +1,11 @@
-var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: 70,
+AOS.init({
+  duration: 1200
 });
 
-$(".menuOpener").click(function () {
-    $(".menuOpener, .menuOpenerInner, .menu").toggleClass("active");
+var scroll = new SmoothScroll('a[href*="#"]', {
+  offset: 70
+});
+
+$(".menuOpener").click(function() {
+  $(".menuOpener, .menuOpenerInner, .menu").toggleClass("active");
 });
