@@ -1,5 +1,6 @@
 header {
-  padding-bottom: 7%;
+  padding-bottom: 17%;
+  padding-top: 13%;
   position: relative;
   border-radius: 0 0 200px 0;
   box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
@@ -13,8 +14,8 @@ header {
     $accentColor;
   background-size: 22px 22px;
   @include mqLaptopBig {
-    padding-bottom: 9%;
-    min-height: 90vh;
+    // padding-bottom: 9%;
+    max-height: 90vh;
     border-radius: 0 0 100px 0;
   }
   @include mqPhoneBig {
@@ -42,7 +43,7 @@ header {
 .menuOpener {
   cursor: pointer;
   height: 64px;
-  position: absolute;
+  position: fixed;
   top: 2%;
   left: 1%;
   user-select: none;
@@ -67,6 +68,7 @@ header {
 
 .menuOpenerInner {
   background: $accentColor;
+
   height: 0.5rem;
   width: 4rem;
   &:focus {
@@ -103,7 +105,7 @@ header {
   background: $primaryBackground2;
   color: transparent;
   height: 64px;
-  position: absolute;
+  position: fixed;
   top: 2%;
   left: 1%;
   user-select: none;
@@ -119,6 +121,11 @@ header {
 .menu.active .menuLink {
   color: $fontColor;
   &:hover {
+    color: black;
+    background-color: $accentColor;
+    border-radius: 15px;
+  }
+  &:focus {
     color: black;
     background-color: $accentColor;
     border-radius: 15px;
@@ -167,22 +174,25 @@ header {
 
 // Page One Name Start
 h1,
-h3 {
+h3,
+.hi {
   font-size: 8rem;
   text-align: center;
-  font-weight: 700;
+  // font-weight: 700;
   letter-spacing: 2px;
   transform: translateY(10%);
   color: $fontColor;
+  margin-top: 30px;
+  margin-bottom: 30px;
   @include mqLaptopSmall {
     font-size: 6rem;
   }
 }
 
 h1 {
-  padding-top: 10%;
-  line-height: 130px;
-  padding-bottom: 45px;
+  // line-height: 130px;
+  // padding-bottom: 45px;
+  font-weight: 100;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
@@ -200,10 +210,8 @@ h3 {
 }
 
 .pageOneName {
-  padding-top: 8%;
-  padding-bottom: 10%;
   font-size: 9rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   @include mqLaptopSmall {
     font-size: 6rem;
     padding-top: 15%;
@@ -216,6 +224,7 @@ h3 {
   .myName {
     color: $accentColor;
     font-size: 18rem;
+    font-weight: 900;
     font-family: "Tangerine", cursive;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
@@ -234,15 +243,19 @@ h3 {
   background: $primaryBackground;
   color: $fontColor;
   font-size: 2rem;
+  border-radius: 15px;
   &:focus {
-    outline: 1px solid $accentColor;
+    border: 1px solid $accentColor;
+    outline: none;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
   }
 }
 
 .skip-link:focus {
-  left: 0;
+  left: 40%;
+  top: 10%;
+  border-radius: 15px;
 }
 
 // Hamburger menu thanks to Phillippe
