@@ -63,6 +63,12 @@
     &:hover {
       background-color: $primaryBackground2;
     }
+    &:focus {
+      background-color: $primaryBackground2;
+      border: 1px solid $accentColor;
+      outline: none;
+      border-radius: 20px;
+    }
   }
 }
 
