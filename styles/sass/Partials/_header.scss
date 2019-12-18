@@ -14,6 +14,7 @@ header {
   background-size: 22px 22px;
   @include mqLaptopSmall {
     padding-bottom: 18%;
+    min-height: 70vh;
     border-radius: 0 0 100px 0;
   }
 }
@@ -105,12 +106,15 @@ header {
 }
 
 .menu.active {
-  width: calc(100% - 4rem);
+  width: calc(70% - 4rem);
 }
+
 .menu.active .menuLink {
   color: $fontColor;
   &:hover {
-    color: $accentColor;
+    color: $fontColor;
+    background-color: $accentColor;
+    border-radius: 15px;
   }
 }
 
@@ -197,8 +201,8 @@ h3 {
   }
   .myName {
     color: $accentColor;
-    font-size: 12rem;
-    font-family: "Cougrette", cursive;
+    font-size: 18rem;
+    font-family: "Tangerine", cursive;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
     @include mqLaptopSmall {

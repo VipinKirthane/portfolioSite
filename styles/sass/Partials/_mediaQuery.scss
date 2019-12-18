@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin mqPhoneBig {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
