@@ -219,5 +219,24 @@ h3 {
 }
 // Page One Name End
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: $primaryBackground;
+  color: $fontColor;
+  font-size: 2rem;
+  &:focus {
+    outline: 1px solid $accentColor;
+    border-radius: 15px;
+    padding: 5px;
+  }
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 // Hamburger menu thanks to Phillippe
 // https://codepen.io/Philippe_Fercha/pen/rqkci
