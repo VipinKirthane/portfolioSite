@@ -1,5 +1,5 @@
 header {
-  padding-bottom: 8%;
+  padding-bottom: 7%;
   position: relative;
   border-radius: 0 0 200px 0;
   box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
@@ -12,10 +12,13 @@ header {
     linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
     $accentColor;
   background-size: 22px 22px;
-  @include mqLaptopSmall {
-    padding-bottom: 18%;
-    min-height: 70vh;
+  @include mqLaptopBig {
+    padding-bottom: 9%;
+    min-height: 90vh;
     border-radius: 0 0 100px 0;
+  }
+  @include mqPhoneBig {
+    min-height: 70vh;
   }
 }
 
@@ -199,6 +202,10 @@ h3 {
     padding-top: 15%;
     padding-bottom: 15%;
   }
+
+  @include mqPhoneBig {
+    padding-top: 30%;
+  }
   .myName {
     color: $accentColor;
     font-size: 18rem;
@@ -206,7 +213,7 @@ h3 {
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
     @include mqLaptopSmall {
-      font-size: 8rem;
+      font-size: 10rem;
     }
   }
 }

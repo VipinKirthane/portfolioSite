@@ -1,7 +1,7 @@
 .aboutSection {
   margin-top: 8%;
   position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   h3 {
     color: $accentColor;
     margin: 0 auto;
@@ -40,6 +40,7 @@
   @include mqLaptopSmall {
     width: 100%;
     padding-left: 10px;
+    padding-bottom: 30px;
   }
 }
 

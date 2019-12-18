@@ -235,7 +235,7 @@ a {
 }
 
 header {
-  padding-bottom: 8%;
+  padding-bottom: 7%;
   position: relative;
   border-radius: 0 0 200px 0;
   -webkit-box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
@@ -244,11 +244,17 @@ header {
   background-size: 22px 22px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1366px) {
   header {
-    padding-bottom: 18%;
-    min-height: 70vh;
+    padding-bottom: 9%;
+    min-height: 90vh;
     border-radius: 0 0 100px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    min-height: 70vh;
   }
 }
 
@@ -478,6 +484,12 @@ h3 {
   }
 }
 
+@media (max-width: 520px) {
+  .pageOneName {
+    padding-top: 30%;
+  }
+}
+
 .pageOneName .myName {
   color: #f73859;
   font-size: 18rem;
@@ -487,14 +499,14 @@ h3 {
 
 @media (max-width: 1000px) {
   .pageOneName .myName {
-    font-size: 8rem;
+    font-size: 10rem;
   }
 }
 
 .aboutSection {
   margin-top: 8%;
   position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 
 .aboutSection h3 {
@@ -553,6 +565,7 @@ h3 {
   .aboutSectionText {
     width: 100%;
     padding-left: 10px;
+    padding-bottom: 30px;
   }
 }
 
@@ -601,6 +614,7 @@ h3 {
 
 .skillsSection {
   padding-bottom: 2%;
+  margin-bottom: 8%;
   background: linear-gradient(90deg, #404b69 21px, transparent 1%) center, linear-gradient(#404b69 21px, transparent 1%) center, #f73859;
   background-size: 22px 22px;
   border-radius: 200px 0 200px 0;
