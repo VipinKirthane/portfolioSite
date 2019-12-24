@@ -19,7 +19,7 @@ header {
     border-radius: 0 0 100px 0;
   }
   @include mqPhoneBig {
-    min-height: 70vh;
+    min-height: 80vh;
   }
 }
 
@@ -166,9 +166,10 @@ header {
   .menuLink {
     padding: 10px 0;
     font-size: 1.8em;
+    height: 50px;
   }
   .menu.active {
-    width: 60%;
+    width: 250px;
   }
 }
 

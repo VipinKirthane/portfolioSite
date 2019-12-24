@@ -45,8 +45,8 @@
     width: 480px;
   }
   @include mqTabletSmall {
-    height: 300px;
-    width: 300px;
+    height: 380px;
+    width: 380px;
   }
   .devicon-html5-plain-wordmark:hover {
     color: #fb5b5a;
@@ -104,9 +104,9 @@
       font-size: 8rem;
     }
     @include mqTabletSmall {
-      height: 80px;
-      width: 80px;
-      font-size: 4.2rem;
+      height: 100px;
+      width: 100px;
+      font-size: 6rem;
     }
     &:before {
       transition: 0.1s;
