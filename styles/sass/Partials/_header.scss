@@ -5,19 +5,18 @@ header {
   border-radius: 0 0 200px 0;
   box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
   height: 95vh;
-  background: linear-gradient(
-        90deg,
-        $primaryBackground (22px - 1px),
-        transparent 1%
-      )
-      center,
+  background: linear-gradient(90deg,
+      $primaryBackground (22px - 1px),
+      transparent 1%) center,
     linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
     $accentColor;
   background-size: 22px 22px;
+
   @include mqLaptopBig {
     max-height: 95vh;
     border-radius: 0 0 100px 0;
   }
+
   @include mqPhoneBig {
     max-height: 80vh;
   }
@@ -55,11 +54,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
   &:focus {
     background: $primaryBackground2;
     border-radius: 20px;
   }
 }
+
 .menuOpener:hover,
 .menuOpener.active {
   background: $primaryBackground2;
@@ -71,11 +72,13 @@ header {
 
   height: 0.5rem;
   width: 4rem;
+
   &:focus {
     outline: 1px solid $accentColor;
     border-radius: 20px;
   }
 }
+
 .menuOpenerInner::before,
 .menuOpenerInner::after {
   background: $fontColor;
@@ -85,18 +88,23 @@ header {
   margin-top: 0px;
   width: 4rem;
 }
+
 .menuOpenerInner::before {
   transform: translateY(-1rem);
 }
+
 .menuOpenerInner::after {
   transform: translateY(0.5rem);
 }
+
 .menuOpenerInner.active {
   background: transparent;
 }
+
 .menuOpenerInner.active::before {
   transform: translateY(0rem) rotate(-45deg);
 }
+
 .menuOpenerInner.active::after {
   transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
 }
@@ -120,11 +128,13 @@ header {
 
 .menu.active .menuLink {
   color: $fontColor;
+
   &:hover {
     color: black;
     background-color: $accentColor;
     border-radius: 15px;
   }
+
   &:focus {
     color: black;
     background-color: $accentColor;
@@ -152,6 +162,7 @@ header {
   text-align: center;
   text-decoration: none;
 }
+
 .menuLink li {
   margin: auto;
 }
@@ -160,16 +171,37 @@ header {
   .menu {
     height: auto;
   }
+
   .menuInner {
     display: block;
   }
+
   .menuLink {
     padding: 10px 0;
     font-size: 1.8em;
     height: 50px;
   }
+
   .menu.active {
     width: 250px;
+  }
+}
+
+.resumeButton {
+  font-size: 1.8rem;
+  border-radius: 50px;
+  padding: 10px 25px;
+  background: $accentColor;
+  color: $fontColor;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1),
+    0px 5px 4px rgba(0, 0, 0, 0.1),
+    0px 5px 5px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: $primaryBackground2;
   }
 }
 
@@ -185,6 +217,7 @@ h3,
   color: $fontColor;
   margin-top: 30px;
   margin-bottom: 30px;
+
   @include mqLaptopSmall {
     font-size: 6rem;
   }
@@ -205,14 +238,21 @@ h3 {
   text-align: center;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
+
   @include mqLaptopSmall {
     font-size: 5rem;
+  }
+
+  @include mqTabletSmall {
+    font-size: 4rem;
   }
 }
 
 .pageOneName {
   font-size: 9rem;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
+
   @include mqLaptopSmall {
     font-size: 6rem;
     padding-top: 15%;
@@ -222,6 +262,7 @@ h3 {
   @include mqPhoneBig {
     padding-top: 30%;
   }
+
   .myName {
     color: $accentColor;
     font-size: 18rem;
@@ -229,11 +270,17 @@ h3 {
     font-family: "Tangerine", cursive;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
+
     @include mqLaptopSmall {
+      font-size: 15rem;
+    }
+
+    @include mqTabletSmall {
       font-size: 10rem;
     }
   }
 }
+
 // Page One Name End
 
 .skip-link {
@@ -245,6 +292,7 @@ h3 {
   color: $fontColor;
   font-size: 2rem;
   border-radius: 15px;
+
   &:focus {
     border: 1px solid $accentColor;
     outline: none;

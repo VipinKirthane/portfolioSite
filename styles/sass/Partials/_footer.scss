@@ -8,6 +8,7 @@ footer {
   p {
     color: $fontColor;
     font-size: 1.8rem;
+
     @include mqTabletSmall {
       font-size: 1.8rem;
     }

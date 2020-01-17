@@ -1,8 +1,20 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block;
 }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
 }
 
@@ -25,7 +37,8 @@ a:focus {
   outline: thin dotted;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
@@ -37,7 +50,8 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700;
 }
 
@@ -50,7 +64,10 @@ mark {
   color: #000;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
@@ -68,7 +85,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -97,26 +115,35 @@ fieldset {
   padding: .35em .625em .75em;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   line-height: normal;
 }
 
-button, html input[type=button], input[type=reset], input[type=submit] {
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
@@ -128,7 +155,8 @@ input[type=search] {
   box-sizing: content-box;
 }
 
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -142,11 +170,14 @@ table {
   border-spacing: 0;
 }
 
-body, figure {
+body,
+figure {
   margin: 0;
 }
 
-legend, button::-moz-focus-inner, input::-moz-focus-inner {
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -182,18 +213,75 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 /*
 html5doctor.com Reset Stylesheet v1.6.1
 */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -207,8 +295,17 @@ body {
   line-height: 1;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -216,12 +313,15 @@ nav ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -446,6 +546,21 @@ header {
   }
 }
 
+.resumeButton {
+  font-size: 1.8rem;
+  border-radius: 50px;
+  padding: 10px 25px;
+  background: #f73859;
+  color: #dbedf3;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resumeButton:hover {
+  background-color: #283149;
+}
+
 h1,
 h3,
 .hi {
@@ -486,9 +601,16 @@ h3 {
   }
 }
 
+@media (max-width: 760px) {
+  h3 {
+    font-size: 4rem;
+  }
+}
+
 .pageOneName {
   font-size: 9rem;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -514,6 +636,12 @@ h3 {
 }
 
 @media (max-width: 1000px) {
+  .pageOneName .myName {
+    font-size: 15rem;
+  }
+}
+
+@media (max-width: 760px) {
   .pageOneName .myName {
     font-size: 10rem;
   }
@@ -1015,6 +1143,8 @@ h3 {
 
 .titlePart a {
   background-color: rgba(247, 56, 89, 0.8);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
   font-size: 2rem;
   border-radius: 50px;
   padding: 10px 30px;

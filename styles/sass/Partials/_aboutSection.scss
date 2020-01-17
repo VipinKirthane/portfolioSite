@@ -2,6 +2,7 @@
   margin-top: 8%;
   position: relative;
   margin-bottom: 8%;
+
   h3 {
     color: $accentColor;
     margin: 0 auto;
@@ -10,6 +11,7 @@
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
   }
+
   @include mqTabletSmall {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -19,6 +21,7 @@
 .aboutSectionTextAndPic {
   display: flex;
   justify-content: space-between;
+
   @include mqLaptopSmall {
     flex-direction: column;
   }
@@ -29,14 +32,17 @@
   line-height: 34px;
   padding-bottom: 3%;
   padding-left: 40px;
+
   p {
     padding-top: 10px;
     font-size: 1.9rem;
+
     @include mqTabletSmall {
       font-size: 1.7rem;
       line-height: 30px;
     }
   }
+
   @include mqLaptopSmall {
     width: 100%;
     padding-left: 10px;
@@ -46,14 +52,17 @@
 
 .aboutSectionPicture {
   width: 30%;
+
   @include mqLaptopSmall {
     width: 100%;
     text-align: center;
     margin-top: 40px;
   }
+
   p {
     width: 80%;
   }
+
   img {
     max-height: 400px;
     border-radius: 7px;
@@ -63,12 +72,9 @@
 }
 
 .textBackground {
-  background: linear-gradient(
-        90deg,
-        $primaryBackground (22px - 1px),
-        transparent 1%
-      )
-      center,
+  background: linear-gradient(90deg,
+      $primaryBackground (22px - 1px),
+      transparent 1%) center,
     linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
     $accentColor;
   background-size: 22px 22px;
@@ -79,6 +85,7 @@
   right: 0;
   z-index: -1;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+
   @include mqLaptopSmall {
     width: 100%;
     border-radius: 30px 0 0 80px;

@@ -118,11 +118,14 @@ input {
   position: absolute;
   font-size: 4rem;
   bottom: 50px;
+
   @include mqPhoneBig {
     bottom: -60px;
   }
+
   a {
     color: $accentColor;
+
     &:hover {
       color: $fontColor;
     }
@@ -131,6 +134,7 @@ input {
 
 .contactFormIcon1 {
   left: 50px;
+
   @include mqPhoneBig {
     left: 130px;
   }
@@ -138,6 +142,7 @@ input {
 
 .contactFormIcon2 {
   left: 100px;
+
   @include mqPhoneBig {
     left: 180px;
   }
@@ -145,6 +150,7 @@ input {
 
 .contactFormIcon3 {
   left: 150px;
+
   @include mqPhoneBig {
     left: 230px;
   }
@@ -198,6 +204,7 @@ input {
   cursor: pointer;
   outline: none;
   padding: 5px 10px;
+
   &:focus {
     color: $fontColor;
     background-color: $accentColor;
