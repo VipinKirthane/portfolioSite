@@ -21,3 +21,15 @@
     @content;
   }
 }
+
+@mixin mqPhoneSmall {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mqPhoneTiny {
+  @media (max-width:320px) {
+    @content;
+  }
+}

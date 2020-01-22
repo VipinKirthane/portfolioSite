@@ -81,6 +81,10 @@ input {
 
 .screenBody {
   display: flex;
+
+  @include mqPhoneSmall {
+    margin-bottom: 70px;
+  }
 }
 
 .screenBodyItem {
@@ -136,7 +140,12 @@ input {
   left: 50px;
 
   @include mqPhoneBig {
-    left: 130px;
+    left: 180px;
+    margin-top: 20px;
+  }
+
+  @include mqPhoneSmall {
+    left: 70px;
   }
 }
 
@@ -144,7 +153,12 @@ input {
   left: 100px;
 
   @include mqPhoneBig {
-    left: 180px;
+    left: 240px;
+    margin-top: 20px;
+  }
+
+  @include mqPhoneSmall {
+    left: 140px;
   }
 }
 
@@ -152,7 +166,12 @@ input {
   left: 150px;
 
   @include mqPhoneBig {
-    left: 230px;
+    left: 300px;
+    margin-top: 20px;
+  }
+
+  @include mqPhoneSmall {
+    left: 210px;
   }
 }
 
