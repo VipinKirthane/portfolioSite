@@ -13,12 +13,12 @@ header {
   background-size: 22px 22px;
 
   @include mqLaptopBig {
-    max-height: 95vh;
+    max-height: 90vh;
     border-radius: 0 0 100px 0;
   }
 
   @include mqPhoneBig {
-    min-height: 90vh;
+    // max-height: 90vh;
   }
 }
 

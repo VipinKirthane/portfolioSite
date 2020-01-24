@@ -348,14 +348,8 @@ header {
 
 @media (max-width: 1366px) {
   header {
-    max-height: 95vh;
+    max-height: 90vh;
     border-radius: 0 0 100px 0;
-  }
-}
-
-@media (max-width: 520px) {
-  header {
-    min-height: 90vh;
   }
 }
 
