@@ -353,6 +353,12 @@ header {
   }
 }
 
+@media (max-width: 520px) {
+  header {
+    max-height: 85vh;
+  }
+}
+
 @media (max-width: 760px) {
   .animated {
     /*CSS transitions*/
