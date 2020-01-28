@@ -119,12 +119,9 @@ input {
 .contactFormIcon1,
 .contactFormIcon2,
 .contactFormIcon3 {
-  position: absolute;
   font-size: 4rem;
-  bottom: 50px;
 
   @include mqPhoneBig {
-    bottom: -60px;
   }
 
   a {
@@ -137,41 +134,30 @@ input {
 }
 
 .contactFormIcon1 {
-  left: 50px;
 
   @include mqPhoneBig {
-    left: 180px;
-    margin-top: 20px;
   }
 
   @include mqPhoneSmall {
-    left: 70px;
+
   }
 }
 
 .contactFormIcon2 {
-  left: 100px;
 
   @include mqPhoneBig {
-    left: 240px;
-    margin-top: 20px;
   }
 
   @include mqPhoneSmall {
-    left: 140px;
   }
 }
 
 .contactFormIcon3 {
-  left: 150px;
 
   @include mqPhoneBig {
-    left: 300px;
-    margin-top: 20px;
   }
 
   @include mqPhoneSmall {
-    left: 210px;
   }
 }
 
