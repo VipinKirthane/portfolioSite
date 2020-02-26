@@ -2,9 +2,12 @@
   margin-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 20px;
-  background: linear-gradient(90deg,
-      $primaryBackground (22px - 1px),
-      transparent 1%) center,
+  background: linear-gradient(
+        90deg,
+        $primaryBackground (22px - 1px),
+        transparent 1%
+      )
+      center,
     linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
     $accentColor;
   background-size: 22px 22px;
@@ -34,7 +37,16 @@
   width: 100%;
 
   @include mqLaptopSmall {
-    margin-top: 40px;
+    margin-top: 80px;
+  }
+}
+
+.projectTwo,
+.projectThree,
+.projectFour,
+.projectFive {
+  @include mqPhoneBig {
+    margin-bottom: 50px;
   }
 }
 
@@ -49,8 +61,7 @@
 
   a {
     background-color: rgba(247, 56, 89, 0.8);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1),
-      0px 5px 4px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1),
       0px 5px 5px rgba(0, 0, 0, 0.1);
     font-size: 2rem;
     border-radius: 50px;

@@ -1162,7 +1162,16 @@ h3 {
   .projectThree,
   .projectFour,
   .projectFive {
-    margin-top: 40px;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 520px) {
+  .projectTwo,
+  .projectThree,
+  .projectFour,
+  .projectFive {
+    margin-bottom: 50px;
   }
 }
 
@@ -1851,10 +1860,4 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #283149;
   overflow-x: hidden;
-}
-
-@media (max-width: 520px) {
-  body {
-    overflow-x: hidden;
-  }
 }
