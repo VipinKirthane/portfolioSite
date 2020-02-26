@@ -1138,6 +1138,7 @@ h3 {
 .projectThree,
 .projectFour,
 .projectFive {
+  margin-top: 80px;
   width: 100%;
 }
 
