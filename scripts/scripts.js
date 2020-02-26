@@ -6,8 +6,17 @@ var scroll = new SmoothScroll('a[href*="#"]', {
   offset: 70
 });
 
-$(function () {
-  $(".menuOpener").on("click keypress", function () {
+$(function() {
+  $(".menuOpener").on("click keypress", function() {
     $(".menuOpener, .menuOpenerInner, .menu").toggleClass("active");
   });
+
+
+
+  $(window).resize(function () {
+    if($(window).width() < 520) {
+      $('#test').removeClass('animated');
+    }
+  });
+
 });
