@@ -33,11 +33,13 @@
 .projectThree,
 .projectFour,
 .projectFive {
-  margin-top: 80px;
+  // margin-top: 80px;
   width: 100%;
+}
 
+.projectFive {
   @include mqLaptopSmall {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 
@@ -46,7 +48,7 @@
 .projectFour,
 .projectFive {
   @include mqPhoneBig {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -201,5 +203,16 @@
 
   @include mqPhoneBig {
     margin-right: 5px;
+  }
+}
+
+.separator {
+  border: 5px solid rgba(40, 49, 73, 0.4);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 7px;
+  display: none;
+  @include mqPhoneBig {
+    display: block;
   }
 }

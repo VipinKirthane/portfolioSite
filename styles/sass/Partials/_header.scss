@@ -1,13 +1,14 @@
 header {
-  // padding-bottom: 17%;
-  // padding-top: 13%;
   position: relative;
   border-radius: 0 0 200px 0;
   box-shadow: 0 20px 30px rgba(15, 11, 11, 0.4);
   height: 95vh;
-  background: linear-gradient(90deg,
-      $primaryBackground (22px - 1px),
-      transparent 1%) center,
+  background: linear-gradient(
+        90deg,
+        $primaryBackground (22px - 1px),
+        transparent 1%
+      )
+      center,
     linear-gradient($primaryBackground (22px - 1px), transparent 1%) center,
     $accentColor;
   background-size: 22px 22px;
@@ -19,29 +20,6 @@ header {
 
   @include mqPhoneBig {
     max-height: 85vh;
-  }
-}
-
-@include mqTabletSmall {
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
   }
 }
 
@@ -88,7 +66,6 @@ header {
 .menuOpener.active {
   background: $primaryBackground2;
   border-radius: 20px;
-  border:1px solid $accentColor;
 }
 
 .menuOpenerInner {
@@ -144,8 +121,7 @@ header {
   width: 0rem;
   z-index: 1;
   border-radius: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1),
-    0px 5px 4px rgba(0, 0, 0, 0.1),
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1),
     0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -220,12 +196,10 @@ header {
   padding: 10px 25px;
   background: $accentColor;
   color: $fontColor;
-  margin-top:40px;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-    0px 8px 13px rgba(0, 0, 0, 0.1),
+  margin-top: 40px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1),
-    0px 5px 4px rgba(0, 0, 0, 0.1),
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1),
     0px 5px 5px rgba(0, 0, 0, 0.1);
 
   &:hover {
@@ -263,7 +237,7 @@ h3 {
   text-align: center;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
-  margin-top:30px;
+  margin-top: 30px;
 
   @include mqLaptopSmall {
     font-size: 5rem;
@@ -278,12 +252,12 @@ h3 {
   font-size: 9rem;
   font-family: "M PLUS Rounded 1c", sans-serif;
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height:100%;
+  height: 100%;
 
   @include mqLaptopSmall {
     font-size: 6rem;
@@ -340,25 +314,22 @@ h3 {
 }
 
 .socialIcons {
-  display:flex;
+  display: flex;
   justify-content: center;
-  margin-top:30px;
-  .contactFormIcon2,.contactFormIcon3 {
-    margin-left:20px;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-    0px 5px 5px rgba(0, 0, 0, 0.1),
-    0px 5px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1),
-    0px 5px 4px rgba(0, 0, 0, 0.1),
-    0px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  .contactFormIcon2,
+  .contactFormIcon3 {
+    margin-left: 20px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 5px 5px rgba(0, 0, 0, 0.1),
+      0px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1),
+      0px 5px 5px rgba(0, 0, 0, 0.1);
   }
   .contactFormIcon1 {
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-    0px 5px 5px rgba(0, 0, 0, 0.1),
-    0px 5px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1),
-    0px 5px 4px rgba(0, 0, 0, 0.1),
-    0px 5px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 5px 5px rgba(0, 0, 0, 0.1),
+      0px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1),
+      0px 5px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
