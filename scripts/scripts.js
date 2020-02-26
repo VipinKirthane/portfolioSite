@@ -11,12 +11,10 @@ $(function() {
     $(".menuOpener, .menuOpenerInner, .menu").toggleClass("active");
   });
 
-
-
-  $(window).resize(function () {
-    if($(window).width() < 520) {
-      $('#test').removeClass('animated');
-    }
-  });
+  // $(window).resize(function () {
+  //   if($(window).width() < 520) {
+  //     $('#test').removeClass('animated');
+  //   }
+  // });
 
 });
