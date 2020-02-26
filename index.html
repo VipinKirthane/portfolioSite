@@ -1,316 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral|Roboto|Tangerine|M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css?family=Spectral|Roboto|Tangerine|M+PLUS+Rounded+1c&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Vipin Kirthane</title>
+  </head>
 
-  <link rel="stylesheet" href="styles/styles.css" />
-  <title>Vipin Kirthane</title>
-</head>
+  <body>
+    <header>
+      <a href="#mainContent" class="skip-link">Skip to main content.</a>
+      <nav class="menuOpener animated slideInLeft" tabindex="0">
+        <div class="menuOpenerInner"></div>
+      </nav>
+      <nav class="menu">
+        <ul class="menuInner">
+          <a href="#" class="menuLink">
+            <li>Home</li>
+          </a>
+          <a href="#about" class="menuLink">
+            <li>About</li>
+          </a>
+          <a href="#skills" class="menuLink">
+            <li>Skills</li>
+          </a>
+          <a href="#project" class="menuLink">
+            <li>Projects</li>
+          </a>
+          <a href="#contact" class="menuLink">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <!-- Navbar End -->
 
-<body>
-  <header>
-    <a href="#mainContent" class="skip-link">Skip to main content.</a>
-    <nav class="menuOpener animated slideInLeft" tabindex="0">
-      <div class="menuOpenerInner"></div>
-    </nav>
-    <nav class="menu">
-      <ul class="menuInner">
-        <a href="#" class="menuLink">
-          <li>Home</li>
-        </a>
-        <a href="#about" class="menuLink">
-          <li>About</li>
-        </a>
-        <a href="#skills" class="menuLink">
-          <li>Skills</li>
-        </a>
-        <a href="#project" class="menuLink">
-          <li>Projects</li>
-        </a>
-        <a href="#contact" class="menuLink">
-          <li>Contact</li>
-        </a>
-      </ul>
-    </nav>
-    <!-- Navbar End -->
+      <!-- Page One Start -->
+      <section class="pageOneName animated slideInDown">
+        <!-- <h3>Hi!</h3> -->
+        <h1>I'm <span class="myName"> Vipin</span>.</h1>
+        <h3>&lt;Web Developer&gt;</h3>
+        <a
+          class="resumeButton"
+          href="assets/Vipin-Kirthane-Resume.pdf"
+          download
+          target="_blank"
+          >Resume</a
+        >
+        <div class="socialIcons">
+          <div class="contactFormIcon1">
+            <a
+              href="https://www.linkedin.com/in/vipin-kirthane-818194125/"
+              target="_blank"
+              ><i
+                class="fab fa-linkedin"
+                src="assets/pictures/linkedin-brands.svg"
+              ></i
+            ></a>
+          </div>
+          <div class="contactFormIcon2">
+            <a href="https://twitter.com/Vipin_Kirthane_" target="_blank"
+              ><i
+                class="fab fa-twitter-square"
+                src="assets/pictures/twitter-square-brands.svg"
+              ></i
+            ></a>
+          </div>
 
-    <!-- Page One Start -->
-    <section class="pageOneName animated slideInDown">
-      <!-- <h3>Hi!</h3> -->
-      <h1>I'm <span class="myName"> Vipin</span>.</h1>
-      <h3>&lt;Web Developer&gt;</h3>
-      <a class="resumeButton" href="assets/Vipin-Kirthane-Resume.pdf" download>Resume</a>
-      <div class="socialIcons">
-        <div class="contactFormIcon1">
-          <a href="https://www.linkedin.com/in/vipin-kirthane-818194125/"><i class="fab fa-linkedin" src="assets/pictures/linkedin-brands.svg"></i></a>
+          <div class="contactFormIcon3">
+            <a href="https://github.com/VipinKirthane" target="_blank"
+              ><i
+                class="fab fa-github-square"
+                src="assets/pictures/github-square-brands.svg"
+              ></i
+            ></a>
+          </div>
         </div>
-        <div class="contactFormIcon2">
-          <a href="https://twitter.com/Vipin_Kirthane_"><i class="fab fa-twitter-square" src="assets/pictures/twitter-square-brands.svg"></i></a>
-        </div>
+      </section>
 
-        <div class="contactFormIcon3">
-          <a href="https://github.com/VipinKirthane"><i class="fab fa-github-square" src="assets/pictures/github-square-brands.svg"></i></a>
-        </div>
-      </div>
-    </section>
+      <!-- Page One End -->
+    </header>
 
-    <!-- Page One End -->
-  </header>
+    <!-- About section Start -->
+    <main class="aboutSection" id="about">
+      <div class="textBackground" data-aos="fade-left"></div>
+      <div class="wrapper">
+        <div class="aboutSectionTextAndPic">
+          <div class="aboutSectionPicture">
+            <img
+              src="assets/pictures/profilePhoto.jpg"
+              alt="Portrait shot of Vipin"
+              data-aos="fade-right"
+            />
+          </div>
 
-  <!-- About section Start -->
-  <main class="aboutSection" id="about">
-    <div class="textBackground" data-aos="fade-left"></div>
-    <div class="wrapper">
-      <div class="aboutSectionTextAndPic">
-        <div class="aboutSectionPicture">
-          <img src="assets/pictures/profilePhoto.jpg" alt="Portrait shot of Vipin" data-aos="fade-right" />
-        </div>
-
-        <div class="aboutSectionText" data-aos="fade-left">
-          <h3>ABOUT</h3>
-          <p tabindex="0">
-            Hi! My name is <strong>Vipin Kirthane</strong> and I am a front end web developer with a unique combination of business management & engineering skills. I am focused on creating
-            beautiful and professional websites using best practises and
-            latest W3C web standards resulting in SEO friendly websites. I
-            love what I do as every day there is something new and exciting to
-            learn. I believe a great website should flow seamlessly from one
-            point to the next, allowing the user to navigate without ever
-            getting lost.
-          </p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- About section End -->
-
-  <!-- Skills section Start -->
-  <aside class="skillsSection" data-aos="slide-left" id="skills">
-    <h3 tabindex="0">SKILLS</h3>
-    <div class="topHalfIcons" data-aos="zoom-out-up">
-      <i class="devicon-html5-plain-wordmark vibrate2"></i>
-      <i class="devicon-css3-plain-wordmark vibrate2"></i>
-      <i class="devicon-sass-original vibrate2"></i>
-      <i class="devicon-react-original-wordmark vibrate2"></i>
-      <i class="devicon-javascript-plain vibrate2"></i>
-      <i class="devicon-jquery-plain-wordmark vibrate2"></i>
-      <i class="devicon-github-plain-wordmark vibrate2"></i>
-      <i class="fas fa-universal-access vibrate2"></i>
-    </div>
-  </aside>
-
-  <aside class="projectsSection" id="project">
-    <div class="projectList wrapper" id="mainContent">
-      <h3>PROJECTS PORTFOLIO</h3>
-
-      <div class="projectFive">
-        <div class="projectFiveDesc" data-aos="fade-right" data-aos-offset="-200">
-          <div class="projectFiveTopHalf">
-            <div class="titlePart">
-              <h4>GIF me a movie</h4>
-              <a href="https://team-outofcontext.github.io/gifMeAMovieApp/" tabindex="0">Live</a>
-              <a href="https://github.com/Team-OutOfContext/movieSpoilerProjectSix" tabindex="0">Github</a>
-            </div>
-            <p>
-              "GIF me a movie" is a react group project which based on the
-              user movie selection will provide three gifs that gives out of
-              context movie plots. The project uses two APIs, movieDB & Giphy
-              API to output the results. Built alongside my lovely friends <a
-                href="https://yiying.ca/"><strong>Yiying</strong></a>, <a
-                href="http://www.andrealacson.com/"><strong>Andrea</strong></a> & <a
-                href="https://andrewknows.codes/"><strong>Andrew</strong></a>.
+          <div class="aboutSectionText" data-aos="fade-left">
+            <h3>ABOUT</h3>
+            <p tabindex="0">
+              Hi! My name is <strong>Vipin Kirthane</strong> and I am a front
+              end web developer with a unique combination of business management
+              & engineering skills. I am focused on creating beautiful and
+              professional websites using best practises and latest W3C web
+              standards resulting in SEO friendly websites. I love what I do as
+              every day there is something new and exciting to learn. I believe
+              a great website should flow seamlessly from one point to the next,
+              allowing the user to navigate without ever getting lost.
             </p>
-            <div class="skillsList">
-              <span class="skillButton">HTML5</span>
-              <span class="skillButton">CSS3</span>
-              <span class="skillButton">jQuery</span>
-              <span class="skillButton">React</span>
-              <span class="skillButton">API Based</span>
-            </div>
           </div>
-        </div>
-        <div class="projectFivePreviews" data-aos="fade-left" data-aos-offset="-200">
-          <img src="assets/pictures/gifMeAMovie.png" alt="Gif me a movie website mockup on laptop & phone" />
         </div>
       </div>
+    </main>
+    <!-- About section End -->
 
-      <div class="projectTwo">
-        <div class="projectTwoDesc" data-aos="fade-left" data-aos-offset="-200">
-          <div class="projectTwoTopHalf">
-            <div class="titlePart">
-              <h4>Slot Machine</h4>
-              <a href="https://vipinkirthane.github.io/vipinkirthaneParamasivamProjectThree/" tabindex="0">Live</a>
-              <a href="https://github.com/VipinKirthane/vipinkirthaneParamasivamProjectThree" tabindex="0">Github</a>
-            </div>
-            <p>
-              A Slot Machine to fullfill your deepest desires to lose all your
-              money to the gambling moguls. This game is built on top of
-              HTML5, CSS3 & Vanilla JavaScript.
-            </p>
-            <div class="skillsList">
-              <span class="skillButton">HTML5</span>
-              <span class="skillButton">CSS3</span>
-              <span class="skillButton">SASS</span>
-              <span class="skillButton">JavaScript</span>
-            </div>
-          </div>
-        </div>
-        <div class="projectTwoPreviews" data-aos="fade-right" data-aos-offset="-200">
-          <img src="assets/pictures/slotmachine.png" alt="Slot machine website mockup on a phone and laptop" />
-        </div>
+    <!-- Skills section Start -->
+    <aside class="skillsSection" data-aos="slide-left" id="skills">
+      <h3 tabindex="0">SKILLS</h3>
+      <div class="topHalfIcons" data-aos="zoom-out-up">
+        <i class="devicon-html5-plain-wordmark vibrate2"></i>
+        <i class="devicon-css3-plain-wordmark vibrate2"></i>
+        <i class="devicon-sass-original vibrate2"></i>
+        <i class="devicon-react-original-wordmark vibrate2"></i>
+        <i class="devicon-javascript-plain vibrate2"></i>
+        <i class="devicon-jquery-plain-wordmark vibrate2"></i>
+        <i class="devicon-github-plain-wordmark vibrate2"></i>
+        <i class="fas fa-universal-access vibrate2"></i>
       </div>
+    </aside>
 
-      <div class="projectThree">
-        <div class="projectThreeDesc" data-aos="fade-right" data-aos-offset="-200">
-          <div class="projectThreeTopHalf">
-            <div class="titlePart">
-              <h4>Westerosi Wiki</h4>
-              <a href="https://agameofdevs.github.io/westerosi-wiki/" tabindex="0">Live</a>
-              <a href="https://github.com/agameofdevs/westerosi-wiki" tabindex="0">Github</a>
-            </div>
-            <p>
-              "Westerosi Wiki" is a Game of Thrones wikipedia of the 9 major
-              factions built with a partner for the paired programming
-              project. It uses the API of "Ice & Fire" to pull information
-              from their database based on the user input. Developed with my sweet friend <a
-                href="https://www.reemh.dev/"><strong>Reem</strong></a>.
-            </p>
-            <div class="skillsList">
-              <span class="skillButton">HTML5</span>
-              <span class="skillButton">CSS3</span>
-              <span class="skillButton">jQuery</span>
-              <span class="skillButton">API Based</span>
-            </div>
-          </div>
-        </div>
-        <div class="projectThreePreviews" data-aos="fade-left" data-aos-offset="-200">
-          <img src="assets/pictures/westerosiWiki.png" alt="Westerosi Wiki website mockup on a phone and laptop" />
-        </div>
-      </div>
+    <aside class="projectsSection" id="project">
+      <div class="projectList wrapper" id="mainContent">
+        <h3>PROJECTS PORTFOLIO</h3>
 
-      <div class="projectFour">
-        <div class="projectFourDesc" data-aos="fade-left" data-aos-offset="-200">
-          <div class="projectFourTopHalf">
-            <div class="titlePart">
-              <h4>Space X Rockets</h4>
-              <a href="https://vipinkirthane.github.io/vipinkirthaneParamasivamProjectFive/" tabindex="0">Live</a>
-              <a href="https://github.com/VipinKirthane/vipinkirthaneParamasivamProjectFive" tabindex="0">Github</a>
-            </div>
-            <p>
-              "Space X Rocket Portfolio" is a React project which pulls
-              information from the Space-X API of all the rockets that were
-              and are going to be launched. The website shows the launch
-              video, pictures and some detailed information about the rocket.
-            </p>
-            <div class="skillsList">
-              <span class="skillButton">HTML5</span>
-              <span class="skillButton">CSS3</span>
-              <span class="skillButton">jQuery</span>
-              <span class="skillButton">React</span>
-              <span class="skillButton">API Based</span>
-            </div>
-          </div>
-        </div>
-        <div class="projectFourPreviews" data-aos="fade-right" data-aos-offset="-200">
-          <img src="assets/pictures/spacex.png" alt="Space X website mockup on laptop & phone" />
-        </div>
-      </div>
-
-      <div class="projectOne">
-        <div class="projectOneDesc" data-aos="fade-right" data-aos-offset="-200">
-          <div class="projectOneTopHalf">
-            <div class="titlePart">
-              <h4>Design Mockup Site</h4>
-              <a href="https://vipinkirthane.github.io/vipinkirthaneParamasivamProjectTwo/" tabindex="0">Live</a>
-              <a href="https://github.com/VipinKirthane/vipinkirthaneParamasivamProjectTwo" tabindex="0">Github</a>
-            </div>
-            <p>
-              This is a website that is built from PSD design on top of HTML5,
-              CSS3 with SASS Compiler to demonstrate responsive design.
-            </p>
-            <div class="skillsList">
-              <span class="skillButton">HTML5</span>
-              <span class="skillButton">CSS3</span>
-              <span class="skillButton">SASS</span>
-            </div>
-          </div>
-        </div>
-        <div class="projectOnePreviews" data-aos="fade-left" data-aos-offset="-200">
-          <img src="assets/pictures/design.png" alt="Design website mockup on laptop & phone" />
-        </div>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Contact Form Start -->
-  <aside class="contactForm" id="contact" data-aos="fade-up" data-aos-offset="-100">
-    <div class="background">
-      <div class="container">
-        <div class="screen">
-          <div class="screenHeader">
-            <div class="screenHeaderLeft">
-              <div class="screenHeaderButton close"></div>
-              <div class="screenHeaderButton maximize"></div>
-              <div class="screenHeaderButton minimize"></div>
-            </div>
-            <div class="screenHeaderRight">
-              <div class="screenHeaderEllipsis"></div>
-              <div class="screenHeaderEllipsis"></div>
-              <div class="screenHeaderEllipsis"></div>
-            </div>
-          </div>
-          <div class="screenBody">
-            <div class="screenBodyItem left">
-              <div class="appTitle">
-                <span>CONTACT</span>
-                <span>ME</span>
+        <div class="projectFive">
+          <div
+            class="projectFiveDesc"
+            data-aos="fade-right"
+            data-aos-offset="-200"
+          >
+            <div class="projectFiveTopHalf">
+              <div class="titlePart">
+                <h4>GIF me a movie</h4>
+                <a
+                  href="https://team-outofcontext.github.io/gifMeAMovieApp/"
+                  tabindex="0"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Team-OutOfContext/movieSpoilerProjectSix"
+                  tabindex="0"
+                  target="_blank"
+                  >Github</a
+                >
               </div>
-            </div>
-            <div class="screenBodyItem">
-              <div class="appForm">
-                <div class="appFormGroup">
-                  <input class="appFormControl" placeholder="NAME" />
-                </div>
-                <div class="appFormGroup">
-                  <input class="appFormControl" placeholder="EMAIL" />
-                </div>
-                <div class="appFormGroup message">
-                  <input class="appFormControl" placeholder="MESSAGE" />
-                </div>
-                <div class="appFormGroup buttons">
-                  <button class="appFormButton" tabindex="0">CANCEL</button>
-                  <button class="appFormButton" tabindex="0">SEND</button>
-                </div>
+              <p>
+                "GIF me a movie" is a react group project which based on the
+                user movie selection will provide three gifs that gives out of
+                context movie plots. The project uses two APIs, movieDB & Giphy
+                API to output the results. Built alongside my lovely friends
+                <a href="https://yiying.ca/" target="_blank"
+                  ><strong>Yiying</strong></a
+                >,
+                <a href="http://www.andrealacson.com/" target="_blank"
+                  ><strong>Andrea</strong></a
+                >
+                &
+                <a href="https://andrewknows.codes/" target="_blank"
+                  ><strong>Andrew</strong></a
+                >.
+              </p>
+              <div class="skillsList">
+                <span class="skillButton">HTML5</span>
+                <span class="skillButton">CSS3</span>
+                <span class="skillButton">React</span>
+                <span class="skillButton">API Based</span>
               </div>
             </div>
           </div>
+          <div
+            class="projectFivePreviews"
+            data-aos="fade-left"
+            data-aos-offset="-200"
+          >
+            <img
+              src="assets/pictures/gifMeAMovie.png"
+              alt="Gif me a movie website mockup on laptop & phone"
+            />
+          </div>
+        </div>
+
+        <div class="projectTwo">
+          <div
+            class="projectTwoDesc"
+            data-aos="fade-left"
+            data-aos-offset="-200"
+          >
+            <div class="projectTwoTopHalf">
+              <div class="titlePart">
+                <h4>Slot Machine</h4>
+                <a
+                  href="https://vipinkirthane.github.io/vipinkirthaneParamasivamProjectThree/"
+                  tabindex="0"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/VipinKirthane/vipinkirthaneParamasivamProjectThree"
+                  tabindex="0"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+              <p>
+                A Slot Machine to fullfill your deepest desires to lose all your
+                money to the gambling moguls. This game is built on top of
+                HTML5, CSS3 & jQuery.
+              </p>
+              <div class="skillsList">
+                <span class="skillButton">HTML5</span>
+                <span class="skillButton">SASS</span>
+                <span class="skillButton">jQuery</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="projectTwoPreviews"
+            data-aos="fade-right"
+            data-aos-offset="-200"
+          >
+            <img
+              src="assets/pictures/slotmachine.png"
+              alt="Slot machine website mockup on a phone and laptop"
+            />
+          </div>
+        </div>
+
+        <div class="projectThree">
+          <div
+            class="projectThreeDesc"
+            data-aos="fade-right"
+            data-aos-offset="-200"
+          >
+            <div class="projectThreeTopHalf">
+              <div class="titlePart">
+                <h4>Westerosi Wiki</h4>
+                <a
+                  href="https://agameofdevs.github.io/westerosi-wiki/"
+                  tabindex="0"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/agameofdevs/westerosi-wiki"
+                  tabindex="0"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+              <p>
+                "Westerosi Wiki" is a Game of Thrones wikipedia of the 9 major
+                factions built with a partner for the paired programming
+                project. It uses the API of "Ice & Fire" to pull information
+                from their database based on the user input. Developed with my
+                sweet friend
+                <a href="https://www.reemh.dev/" target="_blank"
+                  ><strong>Reem</strong></a
+                >.
+              </p>
+              <div class="skillsList">
+                <span class="skillButton">HTML5</span>
+                <span class="skillButton">SASS</span>
+                <span class="skillButton">jQuery</span>
+                <span class="skillButton">API Based</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="projectThreePreviews"
+            data-aos="fade-left"
+            data-aos-offset="-200"
+          >
+            <img
+              src="assets/pictures/westerosiWiki.png"
+              alt="Westerosi Wiki website mockup on a phone and laptop"
+            />
+          </div>
+        </div>
+
+        <div class="projectFour">
+          <div
+            class="projectFourDesc"
+            data-aos="fade-left"
+            data-aos-offset="-200"
+          >
+            <div class="projectFourTopHalf">
+              <div class="titlePart">
+                <h4>Space X Rockets</h4>
+                <a
+                  href="https://vipinkirthane.github.io/vipinkirthaneParamasivamProjectFive/"
+                  tabindex="0"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/VipinKirthane/vipinkirthaneParamasivamProjectFive"
+                  tabindex="0"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+              <p>
+                "Space X Rocket Portfolio" is a React project which pulls
+                information from the Space-X API of all the rockets that were
+                and are going to be launched. The website shows the launch
+                video, pictures and some detailed information about the rocket.
+              </p>
+              <div class="skillsList">
+                <span class="skillButton">HTML5</span>
+                <span class="skillButton">CSS3</span>
+                <span class="skillButton">React</span>
+                <span class="skillButton">API Based</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="projectFourPreviews"
+            data-aos="fade-right"
+            data-aos-offset="-200"
+          >
+            <img
+              src="assets/pictures/spacex.png"
+              alt="Space X website mockup on laptop & phone"
+            />
+          </div>
+        </div>
+
+        <div class="projectOne">
+          <div
+            class="projectOneDesc"
+            data-aos="fade-right"
+            data-aos-offset="-200"
+          >
+            <div class="projectOneTopHalf">
+              <div class="titlePart">
+                <h4>Design Mockup Site</h4>
+                <a
+                  href="https://vipinkirthane.github.io/vipinkirthaneParamasivamProjectTwo/"
+                  tabindex="0"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/VipinKirthane/vipinkirthaneParamasivamProjectTwo"
+                  tabindex="0"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+              <p>
+                This is a website that is built from PSD design on top of HTML5,
+                CSS3 with SASS Compiler to demonstrate responsive design.
+              </p>
+              <div class="skillsList">
+                <span class="skillButton">HTML5</span>
+                <span class="skillButton">CSS3</span>
+                <span class="skillButton">SASS</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="projectOnePreviews"
+            data-aos="fade-left"
+            data-aos-offset="-200"
+          >
+            <img
+              src="assets/pictures/design.png"
+              alt="Design website mockup on laptop & phone"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </aside>
-  <!-- Contact Form End -->
+    </aside>
 
-  <footer>
-    <p>Copyright © Vipin Kirthane - 2020</p>
-  </footer>
+    <!-- Contact Form Start -->
+    <aside
+      class="contactForm"
+      id="contact"
+      data-aos="fade-up"
+      data-aos-offset="-100"
+    >
+      <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screenHeader">
+              <div class="screenHeaderLeft">
+                <div class="screenHeaderButton close"></div>
+                <div class="screenHeaderButton maximize"></div>
+                <div class="screenHeaderButton minimize"></div>
+              </div>
+              <div class="screenHeaderRight">
+                <div class="screenHeaderEllipsis"></div>
+                <div class="screenHeaderEllipsis"></div>
+                <div class="screenHeaderEllipsis"></div>
+              </div>
+            </div>
+            <div class="screenBody">
+              <div class="screenBodyItem left">
+                <div class="appTitle">
+                  <span>CONTACT</span>
+                  <span>ME</span>
+                </div>
+              </div>
+              <div class="screenBodyItem">
+                <div class="appForm">
+                  <div class="appFormGroup">
+                    <input class="appFormControl" placeholder="NAME" />
+                  </div>
+                  <div class="appFormGroup">
+                    <input class="appFormControl" placeholder="EMAIL" />
+                  </div>
+                  <div class="appFormGroup message">
+                    <input class="appFormControl" placeholder="MESSAGE" />
+                  </div>
+                  <div class="appFormGroup buttons">
+                    <button class="appFormButton" tabindex="0">CANCEL</button>
+                    <button class="appFormButton" tabindex="0">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Contact Form End -->
 
-  <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="https://kit.fontawesome.com/23a74f9e1a.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
-    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <footer>
+      <p>Copyright © Vipin Kirthane - 2020</p>
+    </footer>
 
-  <script src="./scripts/scripts.js"></script>
-</body>
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/23a74f9e1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+    <script src="./scripts/scripts.js"></script>
+  </body>
 </html>
