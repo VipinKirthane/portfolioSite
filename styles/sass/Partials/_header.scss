@@ -333,5 +333,19 @@ h3 {
   }
 }
 
+// Scrollbar mods
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: $primaryBackground2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $accentColor;
+  border-radius: 20px;
+}
+
 // Hamburger menu thanks to Phillippe
 // https://codepen.io/Philippe_Fercha/pen/rqkci

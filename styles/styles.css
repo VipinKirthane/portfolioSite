@@ -703,6 +703,19 @@ h3 {
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #283149;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f73859;
+  border-radius: 20px;
+}
+
 .aboutSection {
   margin-top: 8%;
   position: relative;
