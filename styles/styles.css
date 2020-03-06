@@ -667,7 +667,6 @@ h3 {
 }
 
 .skip-link:focus {
-  border: 1px solid #f73859;
   outline: none;
   border-radius: 15px;
   padding: 10px;
