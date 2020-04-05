@@ -724,8 +724,9 @@ body::-webkit-scrollbar-thumb {
 .aboutSection h3 {
   color: #f73859;
   margin: 0 auto;
+  margin-top: 20px;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
@@ -762,7 +763,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .aboutSectionText p {
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 1.9rem;
 }
 
@@ -771,6 +772,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.7rem;
     line-height: 30px;
   }
+}
+
+.aboutSectionText .foss {
+  padding-top: 10px;
 }
 
 @media (max-width: 1000px) {
