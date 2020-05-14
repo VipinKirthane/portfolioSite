@@ -21,17 +21,27 @@ html {
 a {
   text-decoration: none;
   color: $fontColor;
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
 }
 
 p {
   color: $fontColor;
+  text-align: justify;
   font-size: 2rem;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
   background-color: $primaryBackground2;
   overflow-x: hidden;
+}
+
+h1,
+h3,
+h4,
+h5 {
+  font-family: "Josefin Sans", sans-serif;
 }

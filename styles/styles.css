@@ -609,7 +609,7 @@ h3 {
 
 .pageOneName {
   font-size: 9rem;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,15 +756,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .aboutSectionText {
-  width: 60%;
-  line-height: 34px;
+  width: 58%;
+  line-height: 32px;
   padding-bottom: 3%;
   padding-left: 40px;
 }
 
 .aboutSectionText p {
   padding-top: 20px;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 @media (max-width: 760px) {
@@ -1144,7 +1144,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .projectsSection p {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   line-height: 30px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1829,7 +1829,6 @@ input {
 
 footer {
   padding: 10px 0;
-  text-align: center;
   background-color: #404b69;
   border-radius: 15px 15px 0px 0px;
   -webkit-box-shadow: 0 10px 20px 15px rgba(15, 11, 11, 0.4);
@@ -1838,7 +1837,9 @@ footer {
 
 footer p {
   color: #dbedf3;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 @media (max-width: 760px) {
@@ -1860,17 +1861,27 @@ html {
 a {
   text-decoration: none;
   color: #dbedf3;
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
 }
 
 p {
   color: #dbedf3;
+  text-align: justify;
   font-size: 2rem;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
   background-color: #283149;
   overflow-x: hidden;
+}
+
+h1,
+h3,
+h4,
+h5 {
+  font-family: "Josefin Sans", sans-serif;
 }

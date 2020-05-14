@@ -29,14 +29,14 @@
 }
 
 .aboutSectionText {
-  width: 60%;
-  line-height: 34px;
+  width: 58%;
+  line-height: 32px;
   padding-bottom: 3%;
   padding-left: 40px;
 
   p {
     padding-top: 20px;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 
     @include mqTabletSmall {
       font-size: 1.7rem;
