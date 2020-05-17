@@ -401,11 +401,12 @@
     </aside>
 
     <!-- Contact Form Start -->
-    <aside
+    <form
       class="contactForm"
       id="contact"
       data-aos="fade-up"
       data-aos-offset="-100"
+      action="https://formspree.io/mrgyepqo" method="POST"
     >
       <div class="background">
         <div class="container">
@@ -432,16 +433,16 @@
               <div class="screenBodyItem">
                 <div class="appForm">
                   <div class="appFormGroup">
-                    <input class="appFormControl" placeholder="NAME" />
+                    <input class="appFormControl" name="name" placeholder="NAME" />
                   </div>
                   <div class="appFormGroup">
-                    <input class="appFormControl" placeholder="EMAIL" />
+                    <input class="appFormControl" name="_replyto" placeholder="EMAIL" />
                   </div>
                   <div class="appFormGroup message">
                     <input class="appFormControl" placeholder="MESSAGE" />
                   </div>
                   <div class="appFormGroup buttons">
-                    <button class="appFormButton" tabindex="0">SEND</button>
+                    <button class="appFormButton" value="Send" tabindex="0">SEND</button>
                   </div>
                 </div>
               </div>
@@ -449,7 +450,7 @@
           </div>
         </div>
       </div>
-    </aside>
+    </form>
     <!-- Contact Form End -->
 
     <footer>
