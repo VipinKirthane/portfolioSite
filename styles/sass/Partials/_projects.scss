@@ -69,7 +69,7 @@
     border-radius: 50px;
     padding: 10px 30px;
     border: 1px solid $accentColor;
-    background-color: $primaryBackground2;
+    background-color: $primaryBackground3;
 
     @include mqLaptopSmall {
       font-size: 1.7rem;
@@ -84,12 +84,11 @@
     }
 
     &:hover {
-      background-color: $primaryBackground2;
+      background-color: $primaryBackground3;
     }
 
     &:focus {
-      background-color: $primaryBackground2;
-      border: 1px solid $accentColor;
+      background-color: $primaryBackground3;
       outline: none;
       border-radius: 20px;
     }
