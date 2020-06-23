@@ -402,13 +402,13 @@ header {
 }
 
 .menuOpener:focus {
-  background: #283149;
+  background: #1b1b2f;
   border-radius: 20px;
 }
 
 .menuOpener:hover,
 .menuOpener.active {
-  background: #283149;
+  background: #1b1b2f;
   border-radius: 20px;
 }
 
@@ -458,7 +458,7 @@ header {
 }
 
 .menu {
-  background: #283149;
+  background: #1b1b2f;
   color: transparent;
   height: 64px;
   position: fixed;
@@ -664,7 +664,7 @@ h3 {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: #404b69;
+  background: #283149;
   color: #ffffff;
   font-size: 2rem;
   border-radius: 15px;
@@ -677,7 +677,7 @@ h3 {
 }
 
 .skip-link:focus {
-  left: 40%;
+  left: 44%;
   top: 10%;
   border-radius: 15px;
 }
@@ -1140,7 +1140,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 760px) {
   .projectsSection {
-    border-radius: 100px 0 100px 0;
+    border-radius: 100px 0;
   }
 }
 
@@ -1224,15 +1224,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.titlePart a:hover {
+.titlePart a:hover, .titlePart a:focus {
   background-color: #f73859;
   border-radius: 5px;
 }
 
 .titlePart a:focus {
-  background-color: #f73859;
   outline: none;
-  border-radius: 5px;
 }
 
 .projectOnePreviews,

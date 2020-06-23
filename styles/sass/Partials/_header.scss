@@ -57,14 +57,14 @@ header {
   align-items: center;
 
   &:focus {
-    background: $primaryBackground2;
+    background: $primaryBackground3;
     border-radius: 20px;
   }
 }
 
 .menuOpener:hover,
 .menuOpener.active {
-  background: $primaryBackground2;
+  background: $primaryBackground3;
   border-radius: 20px;
 }
 
@@ -110,7 +110,7 @@ header {
 }
 
 .menu {
-  background: $primaryBackground2;
+  background: $primaryBackground3;
   color: transparent;
   height: 64px;
   position: fixed;
@@ -260,8 +260,6 @@ h3 {
 
   @include mqLaptopSmall {
     font-size: 6rem;
-    // padding-top: 15%;
-    // padding-bottom: 15%;
   }
 
   @include mqPhoneBig {
@@ -293,13 +291,12 @@ h3 {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: $primaryBackground;
+  background: $primaryBackground2;
   color: $fontColor;
   font-size: 2rem;
   border-radius: 15px;
 
   &:focus {
-    // border: 1px solid $accentColor;
     outline: none;
     border-radius: 15px;
     padding: 10px;
@@ -307,7 +304,7 @@ h3 {
 }
 
 .skip-link:focus {
-  left: 40%;
+  left: 44%;
   top: 10%;
   border-radius: 15px;
 }
