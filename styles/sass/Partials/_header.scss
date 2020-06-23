@@ -328,15 +328,18 @@ h3 {
 // Scrollbar mods
 body::-webkit-scrollbar {
   width: 0.8rem;
+  &:hover {
+    width: 1.5rem;
+  }
 }
 
 body::-webkit-scrollbar-track {
-  background: $primaryBackground2;
+  background: $primaryBackground3;
 }
 
 body::-webkit-scrollbar-thumb {
   background: $accentColor;
-  // border-radius: 20px;
+  border-radius: 10px;
 }
 
 // Hamburger menu thanks to Phillippe

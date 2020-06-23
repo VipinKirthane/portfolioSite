@@ -707,12 +707,17 @@ body::-webkit-scrollbar {
   width: 0.8rem;
 }
 
+body::-webkit-scrollbar:hover {
+  width: 1.5rem;
+}
+
 body::-webkit-scrollbar-track {
-  background: #283149;
+  background: #1b1b2f;
 }
 
 body::-webkit-scrollbar-thumb {
   background: #f73859;
+  border-radius: 10px;
 }
 
 .aboutSection {
@@ -1796,7 +1801,7 @@ input {
 .appFormButton:hover {
   color: #ffffff;
   background-color: #f73859;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 520px) {
