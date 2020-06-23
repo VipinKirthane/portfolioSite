@@ -134,17 +134,14 @@ input {
 }
 
 .contactFormIcon1 {
-
   @include mqPhoneBig {
   }
 
   @include mqPhoneSmall {
-
   }
 }
 
 .contactFormIcon2 {
-
   @include mqPhoneBig {
   }
 
@@ -153,7 +150,6 @@ input {
 }
 
 .contactFormIcon3 {
-
   @include mqPhoneBig {
   }
 
@@ -202,25 +198,26 @@ input {
 }
 
 .appFormButton {
-  background: none;
-  border: none;
+  background: $primaryBackground3;
+  border: 1px solid $accentColor;
+  border-radius: 25px;
   color: $accentColor;
   font-size: 14px;
   cursor: pointer;
   outline: none;
   padding: 5px 10px;
+  transition: 0.5s;
 
   &:focus {
     color: $fontColor;
     background-color: $accentColor;
     border-radius: 15px;
   }
-}
-
-.appFormButton:hover {
-  color: $fontColor;
-  background-color: $accentColor;
-  border-radius: 15px;
+  &:hover {
+    color: $fontColor;
+    background-color: $accentColor;
+    border-radius: 15px;
+  }
 }
 
 @media screen and (max-width: 520px) {

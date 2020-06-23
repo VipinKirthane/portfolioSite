@@ -37,7 +37,7 @@ header {
 .menuOpenerInner::after,
 .menu,
 .menu.active {
-  transition: 250ms all;
+  transition: 200ms all;
 }
 
 .menuOpener {
@@ -70,7 +70,6 @@ header {
 
 .menuOpenerInner {
   background: $accentColor;
-
   height: 0.5rem;
   width: 4rem;
 
@@ -186,13 +185,14 @@ header {
   }
 
   .menu.active {
-    width: 250px;
+    width: 200px;
   }
 }
 
 .resumeButton {
   font-size: 1.8rem;
-  border-radius: 50px;
+  border-radius: 25px;
+  transition: 0.5s;
   padding: 10px 25px;
   border: 1px solid $accentColor;
   background-color: $primaryBackground3;
@@ -203,7 +203,8 @@ header {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1),
     0px 5px 5px rgba(0, 0, 0, 0.1);
   &:hover {
-    background-color: $primaryBackground3;
+    background-color: $accentColor;
+    border-radius: 5px;
   }
 }
 
@@ -329,7 +330,7 @@ h3 {
 
 // Scrollbar mods
 body::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -338,7 +339,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: $accentColor;
-  border-radius: 20px;
+  // border-radius: 20px;
 }
 
 // Hamburger menu thanks to Phillippe

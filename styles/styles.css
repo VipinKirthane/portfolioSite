@@ -371,8 +371,8 @@ header {
 .menuOpenerInner::after,
 .menu,
 .menu.active {
-  -webkit-transition: 250ms all;
-  transition: 250ms all;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
 }
 
 .menuOpener {
@@ -542,13 +542,15 @@ header {
     height: 50px;
   }
   .menu.active {
-    width: 250px;
+    width: 200px;
   }
 }
 
 .resumeButton {
   font-size: 1.8rem;
-  border-radius: 50px;
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding: 10px 25px;
   border: 1px solid #f73859;
   background-color: #1b1b2f;
@@ -560,7 +562,8 @@ header {
 }
 
 .resumeButton:hover {
-  background-color: #1b1b2f;
+  background-color: #f73859;
+  border-radius: 5px;
 }
 
 h1,
@@ -701,7 +704,7 @@ h3 {
 }
 
 body::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -710,7 +713,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #f73859;
-  border-radius: 20px;
 }
 
 .aboutSection {
@@ -1198,10 +1200,12 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
   font-size: 2rem;
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 10px 30px;
   border: 1px solid #f73859;
   background-color: #1b1b2f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 1000px) {
@@ -1221,13 +1225,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .titlePart a:hover {
-  background-color: #1b1b2f;
+  background-color: #f73859;
+  border-radius: 5px;
 }
 
 .titlePart a:focus {
-  background-color: #1b1b2f;
+  background-color: #f73859;
   outline: none;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .projectOnePreviews,
@@ -1772,13 +1777,16 @@ input {
 }
 
 .appFormButton {
-  background: none;
-  border: none;
+  background: #1b1b2f;
+  border: 1px solid #f73859;
+  border-radius: 25px;
   color: #f73859;
   font-size: 14px;
   cursor: pointer;
   outline: none;
   padding: 5px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .appFormButton:focus {
@@ -1883,56 +1891,4 @@ h3,
 h4,
 h5 {
   font-family: "Josefin Sans", sans-serif;
-}
-
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-.hvr-sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #f73859;
-  border-radius: 25px;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
-  -webkit-transition-property: transform;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-sweep-to-right:hover,
-.hvr-sweep-to-right:focus,
-.hvr-sweep-to-right:active {
-  color: #ffffff;
-}
-
-.hvr-sweep-to-right:hover:before,
-.hvr-sweep-to-right:focus:before,
-.hvr-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
 }
